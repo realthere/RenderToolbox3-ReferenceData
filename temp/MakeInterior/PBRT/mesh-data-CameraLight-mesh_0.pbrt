@@ -1,0 +1,5 @@
+# mesh data CameraLight-mesh_0
+Shape "trianglemesh" 
+  "point P" [-20 -5 0 20 -5 0 20 5 0 -20 5 0] 
+  "normal N" [0 0 1 0 0 1 0 0 1 0 0 1] 
+  "integer indices" [2 3 0 2 0 1] 

@@ -1,0 +1,165 @@
+# Film
+Film "image" 
+  "integer xresolution" [200] 
+  "integer yresolution" [160] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate -80 1 0 0
+Rotate 0 0 1 0
+Rotate -230 0 0 1
+Translate 11.490000 -9.640000 -3.000000
+# Camera-camera
+Camera "perspective" 
+  "float fov" [40.176374] 
+
+WorldBegin
+
+# material CubeMaterial-material
+MakeNamedMaterial "CubeMaterial-material" 
+  "string type" "plastic" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" 
+  "spectrum Ks" [300 0.75] 
+  "float roughness" [0.003] 
+
+# material SphereMaterial-material
+MakeNamedMaterial "SphereMaterial-material" 
+  "string type" "plastic" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" 
+  "spectrum Ks" [300 0.75] 
+  "float roughness" [0.003] 
+
+ObjectBegin "Cube-mesh"
+# object Cube-mesh
+NamedMaterial "CubeMaterial-material"
+Include "mesh-data-Cube-mesh_0.pbrt"
+NamedMaterial "CubeMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Sphere-mesh"
+# object Sphere-mesh
+NamedMaterial "SphereMaterial-material"
+NamedMaterial "SphereMaterial-material"
+Include "mesh-data-Sphere-mesh_0.pbrt"
+
+ObjectEnd
+
+# MrCube
+AttributeBegin
+TransformBegin Translate 1.558882 -4.225325 1.363227
+TransformBegin Rotate -15.000010 0.000000 0.000000 1.000000
+TransformBegin Rotate 0.000010 0.000000 1.000000 0.000000
+TransformBegin Rotate 30.000010 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# RearLamp
+AttributeBegin
+TransformBegin Translate 22.77135 -17.47647 0.3446693
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source RearLamp-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sphere
+AttributeBegin
+TransformBegin Translate 5.032 -1.422861 0.4728882
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Sphere-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sun1
+AttributeBegin
+TransformBegin Translate -2.730917 -11.81851 -6.451714
+TransformBegin Rotate -245.173700 0.000000 0.000000 1.000000
+TransformBegin Rotate 29.739150 0.000000 1.000000 0.000000
+TransformBegin Rotate -133.730700 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source Sun1-light
+LightSource "distant" 
+  "spectrum L" [400 10 700 1] 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sun2
+AttributeBegin
+TransformBegin Translate 0.6106256 13.15332 1.74115
+TransformBegin Rotate 193.037100 0.000000 0.000000 1.000000
+TransformBegin Rotate -10.128590 0.000000 1.000000 0.000000
+TransformBegin Rotate 91.496190 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source Sun2-light
+LightSource "distant" 
+  "spectrum L" [400 1 700 10] 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TopLamp
+AttributeBegin
+TransformBegin Translate -1.490017 -5.01124 4.64047
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source TopLamp-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/DimFlat.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

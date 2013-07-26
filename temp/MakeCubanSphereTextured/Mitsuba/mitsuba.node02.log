@@ -1,0 +1,109 @@
+2013-07-26 17:26:15 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:26:15 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCubanSphereTextured/Mitsuba/CubaTextured09.xml" ..
+2013-07-26 17:26:15 INFO  main [PluginManager] Loading plugin "plugins/bitmap.so" ..
+2013-07-26 17:26:15 INFO  main [BitmapTexture] Loading texture "earthbump1k-stretch-rgb.exr"
+2013-07-26 17:26:15 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so" ..
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/ward.so" ..
+2013-07-26 17:26:16 INFO  main [spectrum.cpp:585] "mccBabel-4.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2013-07-26 17:26:16 WARN  main [properties.cpp:78] Property "irradiance" was specified multiple times!
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/directional.so" ..
+2013-07-26 17:26:16 WARN  main [properties.cpp:78] Property "irradiance" was specified multiple times!
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:26:16 INFO  main [SerializedMesh] Loading shape 0 from "CubaTextured09Unadjusted.serialized" ..
+2013-07-26 17:26:16 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:26:16 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-07-26 17:26:16 INFO  main [SerializedMesh] Loading shape 1 from "CubaTextured09Unadjusted.serialized" ..
+2013-07-26 17:26:16 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:26:16 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 17:26:16 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 17:26:16 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (972 primitives) ..
+2013-07-26 17:26:16 INFO  ren0 [KDTreeBase] Finished -- took 4 ms.
+2013-07-26 17:26:16 INFO  ren0 [SamplingIntegrator] Starting render job (200x160, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 17:26:17 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCubanSphereTextured/Mitsuba/CubaTextured13.exr" ..
+2013-07-26 17:26:17 INFO  ren0 [RenderQueue] Render time: 1.2050s
+2013-07-26 17:26:17 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 832.949 K
+    -  Shadow rays traced : 742.208 K
+
+  * Texture system :
+    -  Average EWA samples / lookup : 9.29 (8.92 M / 960.38 K)
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 100.00 % (480.70 K of 480.70 K)
+    -  Lookups with clamped anisotropy : 0.89 % (4.27 K of 480.70 K)
+------------------------------------------------------------
+2013-07-26 17:26:17 INFO  ren0 [RenderQueue] Render time: 1.2780s
+2013-07-26 17:26:17 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 657.246 K
+    -  Shadow rays traced : 494.176 K
+
+  * Texture system :
+    -  Average EWA samples / lookup : 10.14 (6.52 M / 643.59 K)
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 100.00 % (322.41 K of 322.41 K)
+    -  Lookups with clamped anisotropy : 0.59 % (1.90 K of 322.41 K)
+------------------------------------------------------------
+2013-07-26 17:26:17 INFO  ren0 [RenderQueue] Render time: 1.4650s
+2013-07-26 17:26:17 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 895.623 K
+    -  Shadow rays traced : 827.904 K
+
+  * Texture system :
+    -  Average EWA samples / lookup : 9.85 (10.58 M / 1.07 M)
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 100.00 % (537.33 K of 537.33 K)
+    -  Lookups with clamped anisotropy : 1.08 % (5.82 K of 537.33 K)
+------------------------------------------------------------

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<scene version="0.4.1">
+   <bsdf id="DragonMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="FloorMaterial-material" type="diffuse">
+      <spectrum name="reflectance" value="300:0.5 800:0.5"/>
+   </bsdf>
+   <bsdf id="WallMaterial-material" type="diffuse">
+      <spectrum name="reflectance" value="300:0.75 800:0.75"/>
+   </bsdf>
+   <merge id="LightY-mesh_0">
+      <emitter id="LightY-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" name="radiance"/>
+      </emitter>
+   </merge>
+   <merge id="LightX-mesh_0">
+      <emitter id="LightX-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" name="radiance"/>
+      </emitter>
+   </merge>
+
+    
+   <integrator id="integrator" type="direct">
+        
+      <integer name="shadingSamples" value="32"/>
+    
+   </integrator>
+    
+    
+   <sampler id="Camera-camera_sampler" type="ldsampler">
+        
+      <integer name="sampleCount" value="8"/>
+    
+   </sampler>
+    
+    
+   <merge id="Camera-camera_film" type="hdrfilm">
+        
+      <string name="fileFormat" value="openexr"/>
+        
+      <string name="pixelFormat" value="spectrum"/>
+        
+      <string name="componentFormat" value="float16"/>
+        
+      <boolean name="banner" value="false"/>
+        
+        
+      <rfilter type="gaussian">
+            
+         <float name="stddev" value="0.5"/>
+        
+      </rfilter>
+    
+   </merge>
+    
+
+</scene>

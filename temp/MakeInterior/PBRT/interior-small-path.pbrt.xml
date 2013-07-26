@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">320</parameter>
+      <parameter name="yresolution" type="integer">240</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">512</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="path">
+      <parameter name="maxdepth" type="integer">5</parameter>
+   </SurfaceIntegrator>
+   <Material id="HangingLampReflector-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Material id="Material_009-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd</parameter>
+   </Material>
+   <Material id="Material__210043-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd</parameter>
+   </Material>
+   <AreaLightSource id="CameraLight-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <AreaLightSource id="WallLight-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <Material id="AreaLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Attribute id="Baker_Clas_13_-_Defau" type="">
+      <transformation name="location" type="Translate">-22.39188 23.7237 17.12396</transformation>
+      <transformation name="rotationZ" type="Rotate">-180 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.00793595 0.00793595 0.00793595</transformation>
+      <reference name="instance_geometry" type="Object">Baker_Clas_13_-_Defau-mesh</reference>
+      <reference name="instance_material" type="Material">HalfRed_001-material</reference>
+   </Attribute>
+   <Shape id="Baker_Clas_13_-_Defau-mesh" type="trianglemesh">
+      <reference name="material" type="Material">HalfRed_001-material</reference>
+      <reference name="Baker_Clas_13_-_Defau-mesh_0-material" type="Material">HalfRed_001-material</reference>
+      <reference name="Baker_Clas_13_-_Defau-mesh_0" type="Include">mesh-data-Baker_Clas_13_-_Defau-mesh_0.pbrt</reference>
+   </Shape>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">-30 -30 10</transformation>
+      <transformation name="rotationZ" type="Rotate">-30.000020 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">85.000040 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">37.849287</parameter>
+   </Camera>
+   <Attribute id="CameraLight" type="">
+      <transformation name="location" type="Translate">-10 -30.16 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">-90.000040 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">CameraLight-mesh</reference>
+      <reference name="instance_material" type="Material">AreaLight-material</reference>
+   </Attribute>
+   <Shape id="CameraLight-mesh" type="trianglemesh">
+      <reference name="material" type="Material">AreaLight-material</reference>
+      <reference name="CameraLight-mesh_0-material" type="Material">AreaLight-material</reference>
+      <reference name="CameraLight-mesh_0" type="Include">mesh-data-CameraLight-mesh_0.pbrt</reference>
+      <reference name="area-light" type="AreaLightSource">CameraLight-mesh-area-light</reference>
+   </Shape>
+   <Material id="ChromeMinnaertBlinn-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd</parameter>
+   </Material>
+   <Attribute id="Circle52_Material__21" type="">
+      <transformation name="location" type="Translate">-22.48526 23.70942 14.54376</transformation>
+      <transformation name="rotationZ" type="Rotate">-180 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0.000000 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-0.000020 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.002119766 0.002119766 0.002119765</transformation>
+      <reference name="instance_geometry" type="Object">Circle52_Material__21-mesh</reference>
+      <reference name="instance_material" type="Material">Material__172757-material</reference>
+   </Attribute>
+   <Shape id="Circle52_Material__21-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material__172757-material</reference>
+      <reference name="Circle52_Material__21-mesh_0-material" type="Material">Material__172757-material</reference>
+      <reference name="Circle52_Material__21-mesh_0" type="Include">mesh-data-Circle52_Material__21-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube" type="">
+      <transformation name="location" type="Translate">-12.20769 11.3214 2.209042</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">6.428616 2.200383 -5.3745</transformation>
+      <reference name="instance_geometry" type="Object">Cube_003-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube-mesh" type="trianglemesh">
+      <reference name="Cube-mesh_0-material" type="Material">Magenta-material</reference>
+      <reference name="Cube-mesh_0" type="Include">mesh-data-Cube-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Magenta-material</reference>
+   </Shape>
+   <Attribute id="Cube_001" type="">
+      <transformation name="location" type="Translate">-4.861588 10.67613 7.416005</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.341334 0.5810671 7.5</transformation>
+      <reference name="instance_geometry" type="Object">Cube_001-mesh</reference>
+      <reference name="instance_material" type="Material">Khaki-material</reference>
+   </Attribute>
+   <Shape id="Cube_001-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Khaki-material</reference>
+      <reference name="Cube_001-mesh_0-material" type="Material">Khaki-material</reference>
+      <reference name="Cube_001-mesh_0" type="Include">mesh-data-Cube_001-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_002" type="">
+      <transformation name="location" type="Translate">18.76017 7.030831 7.969778</transformation>
+      <transformation name="rotationZ" type="Rotate">180.939200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-22.853750 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-90.364780 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.1756652 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_016-mesh</reference>
+      <reference name="instance_material" type="Material">Material_008-material</reference>
+   </Attribute>
+   <Shape id="Cube_002-mesh" type="trianglemesh">
+      <reference name="Cube_002-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_002-mesh_0" type="Include">mesh-data-Cube_002-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_003" type="">
+      <transformation name="location" type="Translate">-14.76214 11.85653 3.189848</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_028-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_003-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_003-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_003-mesh_0" type="Include">mesh-data-Cube_003-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_004" type="">
+      <transformation name="location" type="Translate">-15.54602 14.62232 4.605018</transformation>
+      <transformation name="rotationZ" type="Rotate">0.000000 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-0.000000 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-20.168390 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 0.351503 2.067017</transformation>
+      <reference name="instance_geometry" type="Object">Cube_005-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_004-mesh" type="trianglemesh">
+      <reference name="Cube_004-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_004-mesh_0" type="Include">mesh-data-Cube_004-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_005" type="">
+      <transformation name="location" type="Translate">-9.806304 11.8968 3.189848</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_004-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_005-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_005-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_005-mesh_0" type="Include">mesh-data-Cube_005-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_006" type="">
+      <transformation name="location" type="Translate">-18.17935 10.47315 0.8964009</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_006-mesh" type="trianglemesh">
+      <reference name="Cube_006-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cube_006-mesh_0" type="Include">mesh-data-Cube_006-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Shape>
+   <Attribute id="Cube_007" type="">
+      <transformation name="location" type="Translate">-6.495275 10.47315 0.8964009</transformation>
+      <transformation name="rotationZ" type="Rotate">180 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_007-mesh" type="trianglemesh">
+      <reference name="Cube_007-mesh_0-material" type="Material">Grey_002-material</reference>
+      <reference name="Cube_007-mesh_0" type="Include">mesh-data-Cube_007-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Grey_002-material</reference>
+   </Shape>
+   <Attribute id="Cube_008" type="">
+      <transformation name="location" type="Translate">-6.495275 15.3461 0.8964009</transformation>
+      <transformation name="rotationZ" type="Rotate">180 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_008-mesh" type="trianglemesh">
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cube_008-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cube_008-mesh_0" type="Include">mesh-data-Cube_008-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_009" type="">
+      <transformation name="location" type="Translate">-18.17935 15.3461 0.8964009</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_009-mesh" type="trianglemesh">
+      <reference name="Cube_009-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_009-mesh_0" type="Include">mesh-data-Cube_009-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_010" type="">
+      <transformation name="location" type="Translate">-22.69765 4.354195 1.82055</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">6.428616 2.200383 -5.3745</transformation>
+      <reference name="instance_geometry" type="Object">Cube_023-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_010-mesh" type="trianglemesh">
+      <reference name="Cube_010-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_010-mesh_0" type="Include">mesh-data-Cube_010-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_011" type="">
+      <transformation name="location" type="Translate">-23.34524 1.850287 2.801356</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.314857 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_022-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_011-mesh" type="trianglemesh">
+      <reference name="Cube_011-mesh_0-material" type="Material">Red-material</reference>
+      <reference name="Cube_011-mesh_0" type="Include">mesh-data-Cube_011-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Red-material</reference>
+   </Shape>
+   <Attribute id="Cube_012" type="">
+      <transformation name="location" type="Translate">-25.59222 -0.8708029 4.492543</transformation>
+      <transformation name="rotationZ" type="Rotate">270.899200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0.544023 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-80 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_024-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_012-mesh" type="trianglemesh">
+      <reference name="Cube_012-mesh_0-material" type="Material">Material_005-material</reference>
+      <reference name="Cube_012-mesh_0" type="Include">mesh-data-Cube_012-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Material_005-material</reference>
+   </Shape>
+   <Attribute id="Cube_013" type="">
+      <transformation name="location" type="Translate">-27.04387 -1.48086 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_013-mesh" type="trianglemesh">
+      <reference name="Cube_013-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cube_013-mesh_0" type="Include">mesh-data-Cube_013-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Shape>
+   <Attribute id="Cube_014" type="">
+      <transformation name="location" type="Translate">-21.86945 -1.42578 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_014-mesh" type="trianglemesh">
+      <reference name="Cube_014-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_014-mesh_0" type="Include">mesh-data-Cube_014-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_015" type="">
+      <transformation name="location" type="Translate">-27.11372 5.081807 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">270.554500 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_015-mesh" type="trianglemesh">
+      <reference name="Cube_015-mesh_0-material" type="Material">Material_007-material</reference>
+      <reference name="Cube_015-mesh_0" type="Include">mesh-data-Cube_015-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Material_007-material</reference>
+   </Shape>
+   <Attribute id="Cube_016" type="">
+      <transformation name="location" type="Translate">-21.93925 5.131884 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">270.554500 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_016-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material_008-material</reference>
+      <reference name="Cube_016-mesh_0-material" type="Material">Material_008-material</reference>
+      <reference name="Cube_016-mesh_0" type="Include">mesh-data-Cube_016-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_017" type="">
+      <transformation name="location" type="Translate">-3.465814 -2.021254 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">89.497750 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_017-mesh" type="trianglemesh">
+      <reference name="Cube_017-mesh_0-material" type="Material">Material_003-material</reference>
+      <reference name="Cube_017-mesh_0" type="Include">mesh-data-Cube_017-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Material_003-material</reference>
+   </Shape>
+   <Attribute id="Cube_018" type="">
+      <transformation name="location" type="Translate">1.708696 -2.066614 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">89.497750 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_018-mesh" type="trianglemesh">
+      <reference name="Cube_018-mesh_0-material" type="Material">Material-material</reference>
+      <reference name="Cube_018-mesh_0" type="Include">mesh-data-Cube_018-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Material-material</reference>
+   </Shape>
+   <Attribute id="Cube_019" type="">
+      <transformation name="location" type="Translate">-3.414669 4.536584 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_019-mesh" type="trianglemesh">
+      <reference name="Cube_019-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_019-mesh_0" type="Include">mesh-data-Cube_019-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_020" type="">
+      <transformation name="location" type="Translate">1.759883 4.496226 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_008-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_020-mesh" type="trianglemesh">
+      <reference name="Cube_020-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_020-mesh_0" type="Include">mesh-data-Cube_020-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_021" type="">
+      <transformation name="location" type="Translate">0.2972331 3.913044 4.492543</transformation>
+      <transformation name="rotationZ" type="Rotate">89.842450 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0.544023 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-80 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_010-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_021-mesh" type="trianglemesh">
+      <reference name="Cube_021-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_021-mesh_0" type="Include">mesh-data-Cube_021-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_022" type="">
+      <transformation name="location" type="Translate">-12.70926 1.306005 1.70928</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">3.405361 4.161407 -0.09637132</transformation>
+      <reference name="instance_geometry" type="Object">Cube_006-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cube_022-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_022-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_022-mesh_0" type="Include">mesh-data-Cube_022-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_023" type="">
+      <transformation name="location" type="Translate">-2.693203 -1.257683 1.82055</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">6.428616 2.200383 -5.3745</transformation>
+      <reference name="instance_geometry" type="Object">Cube_009-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_023-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_023-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_023-mesh_0" type="Include">mesh-data-Cube_023-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_024" type="">
+      <transformation name="location" type="Translate">-22.37159 24.70041 8.454808</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">270 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">180 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.964797 0.0734935 2.563405</transformation>
+      <reference name="instance_geometry" type="Object">Cube_011-mesh</reference>
+      <reference name="instance_material" type="Material">Red-material</reference>
+   </Attribute>
+   <Shape id="Cube_024-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_024-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_024-mesh_0" type="Include">mesh-data-Cube_024-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_025" type="">
+      <transformation name="location" type="Translate">-1.958499 1.281072 2.807782</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.314857 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_002-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_025-mesh" type="trianglemesh">
+      <reference name="Cube_025-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_025-mesh_0" type="Include">mesh-data-Cube_025-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_026" type="">
+      <transformation name="location" type="Translate">-12.70926 1.306005 1.70928</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">3.899953 4.765806 -0.1103682</transformation>
+      <reference name="instance_geometry" type="Object">Cube_012-mesh</reference>
+      <reference name="instance_material" type="Material">Material_005-material</reference>
+   </Attribute>
+   <Shape id="Cube_026-mesh" type="trianglemesh">
+      <reference name="Cube_026-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_026-mesh_0" type="Include">mesh-data-Cube_026-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">MediumGrey-material</reference>
+   </Shape>
+   <Attribute id="Cube_027" type="">
+      <transformation name="location" type="Translate">-1.958499 -11.56406 2.807782</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.314857 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_020-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Shape id="Cube_027-mesh" type="trianglemesh">
+      <reference name="Cube_027-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cube_027-mesh_0" type="Include">mesh-data-Cube_027-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Shape>
+   <Attribute id="Cube_028" type="">
+      <transformation name="location" type="Translate">7.246519 10.67613 7.416005</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.341334 0.5810671 7.5</transformation>
+      <reference name="instance_geometry" type="Object">Cube_001-mesh</reference>
+      <reference name="instance_material" type="Material">Khaki-material</reference>
+   </Attribute>
+   <Shape id="Cube_028-mesh" type="trianglemesh">
+      <reference name="material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_028-mesh_0-material" type="Material">MediumGrey-material</reference>
+      <reference name="Cube_028-mesh_0" type="Include">mesh-data-Cube_028-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cube_029" type="">
+      <transformation name="location" type="Translate">1.602546 17.19538 8.775938</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">180 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.523139 0.4195876 5.517437</transformation>
+      <reference name="instance_geometry" type="Object">Mesh_006-mesh</reference>
+      <reference name="instance_material" type="Material">Material_001-material</reference>
+   </Attribute>
+   <Attribute id="Cube_030" type="">
+      <transformation name="location" type="Translate">18.35285 7.030831 7.979476</transformation>
+      <transformation name="rotationZ" type="Rotate">180.939200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-22.853750 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-90.364780 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.1756652 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_016-mesh</reference>
+      <reference name="instance_material" type="Material">Material_008-material</reference>
+   </Attribute>
+   <Attribute id="Cube_031" type="">
+      <transformation name="location" type="Translate">17.95521 7.030831 7.979476</transformation>
+      <transformation name="rotationZ" type="Rotate">180.939200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-22.853750 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-90.364780 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.1756652 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_016-mesh</reference>
+      <reference name="instance_material" type="Material">Material_008-material</reference>
+   </Attribute>
+   <Attribute id="Cube_033" type="">
+      <transformation name="location" type="Translate">14.69191 9.020091 6.89502</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">4.61186 1 0.1318348</transformation>
+      <reference name="instance_geometry" type="Object">Cube_015-mesh</reference>
+      <reference name="instance_material" type="Material">Material_007-material</reference>
+   </Attribute>
+   <Attribute id="Cube_034" type="">
+      <transformation name="location" type="Translate">18.84706 4.96032 7.881147</transformation>
+      <transformation name="rotationZ" type="Rotate">180.939200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-22.853750 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-90.364780 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.160454 0.9134082 0.9134082</transformation>
+      <reference name="instance_geometry" type="Object">Cube_016-mesh</reference>
+      <reference name="instance_material" type="Material">Material_008-material</reference>
+   </Attribute>
+   <Attribute id="Cube_035" type="">
+      <transformation name="location" type="Translate">18.39586 4.96032 7.649733</transformation>
+      <transformation name="rotationZ" type="Rotate">180.939200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-22.853750 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-90.364780 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.118237 0.6730815 0.6730815</transformation>
+      <reference name="instance_geometry" type="Object">Cube_016-mesh</reference>
+      <reference name="instance_material" type="Material">Material_008-material</reference>
+   </Attribute>
+   <Attribute id="Cube_036" type="">
+      <transformation name="location" type="Translate">17.2564 8.989343 7.150095</transformation>
+      <transformation name="rotationZ" type="Rotate">-213.613600 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-88.796100 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">231.265600 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.118237 0.6730815 0.6730815</transformation>
+      <reference name="instance_geometry" type="Object">Cube_017-mesh</reference>
+      <reference name="instance_material" type="Material">Material_003-material</reference>
+   </Attribute>
+   <Attribute id="Cube_037" type="">
+      <transformation name="location" type="Translate">17.26783 9.033421 7.393216</transformation>
+      <transformation name="rotationZ" type="Rotate">-175.830500 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-88.796100 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">231.265600 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.118237 0.6730815 0.6730815</transformation>
+      <reference name="instance_geometry" type="Object">Cube_018-mesh</reference>
+      <reference name="instance_material" type="Material">Material-material</reference>
+   </Attribute>
+   <Attribute id="Cube_038" type="">
+      <transformation name="location" type="Translate">13.29436 9.983866 11.50431</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.065485 -0.07920593 3.27559</transformation>
+      <reference name="instance_geometry" type="Object">Cube-mesh</reference>
+      <reference name="instance_material" type="Material">Magenta-material</reference>
+   </Attribute>
+   <Attribute id="Cube_046" type="">
+      <transformation name="location" type="Translate">-8.725183 25.38336 21.19096</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">33.36762 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_007-mesh</reference>
+      <reference name="instance_material" type="Material">Grey_002-material</reference>
+   </Attribute>
+   <Attribute id="Cube_047" type="">
+      <transformation name="location" type="Translate">-2.693203 -14.10282 1.82055</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">6.428616 2.200383 -5.3745</transformation>
+      <reference name="instance_geometry" type="Object">Cube_025-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Attribute id="Cube_048" type="">
+      <transformation name="location" type="Translate">0.2972331 -8.932092 4.492543</transformation>
+      <transformation name="rotationZ" type="Rotate">89.842450 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0.544023 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-80 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_026-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Attribute id="Cube_049" type="">
+      <transformation name="location" type="Translate">1.759883 -8.348909 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_027-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_050" type="">
+      <transformation name="location" type="Translate">-3.414669 -8.308552 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">-90.446860 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_027-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_051" type="">
+      <transformation name="location" type="Translate">1.708696 -14.91175 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">89.497750 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_027-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_052" type="">
+      <transformation name="location" type="Translate">-3.465814 -14.86639 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">89.497750 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_027-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_053" type="">
+      <transformation name="location" type="Translate">-21.88259 -8.335962 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">270.554500 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_013-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_054" type="">
+      <transformation name="location" type="Translate">-27.05705 -8.38604 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">270.554500 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_013-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_055" type="">
+      <transformation name="location" type="Translate">-21.81278 -14.89363 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_013-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_056" type="">
+      <transformation name="location" type="Translate">-26.9872 -14.94871 0.8795736</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 0.3205321 -0.1670068</transformation>
+      <reference name="instance_geometry" type="Object">Cube_013-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cube_057" type="">
+      <transformation name="location" type="Translate">-25.53555 -14.33865 4.492543</transformation>
+      <transformation name="rotationZ" type="Rotate">270.899200 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0.544023 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-80 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.160504 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_014-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Attribute id="Cube_058" type="">
+      <transformation name="location" type="Translate">-23.28857 -11.61756 2.801356</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">5.314857 1.80122 -1.432307</transformation>
+      <reference name="instance_geometry" type="Object">Cube_019-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Attribute id="Cube_059" type="">
+      <transformation name="location" type="Translate">-22.64099 -9.113651 1.82055</transformation>
+      <transformation name="rotationZ" type="Rotate">90.609870 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">6.428616 2.200383 -5.3745</transformation>
+      <reference name="instance_geometry" type="Object">Cube_021-mesh</reference>
+      <reference name="instance_material" type="Material">MediumGrey-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder" type="">
+      <transformation name="location" type="Translate">-20.0806 24.64588 2.806733</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08306985 0.08306985 0.1882917</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_010-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder_001" type="">
+      <transformation name="location" type="Translate">-20.0827 24.64588 14.14446</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08306985 0.08306985 0.1882917</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_010-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder_002" type="">
+      <transformation name="location" type="Translate">-12.37264 1.329473 17.53285</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.065584 0.065584 5.286612</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_012-mesh</reference>
+   </Attribute>
+   <Attribute id="Cylinder_004" type="">
+      <transformation name="location" type="Translate">-24.65267 24.64588 14.12365</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08306985 0.08306985 0.1882917</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_004-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cylinder_004-mesh" type="trianglemesh">
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cylinder_004-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cylinder_004-mesh_0" type="Include">mesh-data-Cylinder_004-mesh_0.pbrt</reference>
+   </Shape>
+   <Shape id="Cylinder_005-mesh" type="trianglemesh">
+      <reference name="Cylinder_005-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cylinder_005-mesh_0" type="Include">mesh-data-Cylinder_005-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Shape>
+   <Attribute id="Cylinder_007" type="">
+      <transformation name="location" type="Translate">-24.65848 24.64588 2.806733</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08306985 0.08306985 0.1882917</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_004-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder_008" type="">
+      <transformation name="location" type="Translate">8.77969 9.928002 8.849111</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08550714 0.08550714 0.1938162</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_004-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder_009" type="">
+      <transformation name="location" type="Translate">17.86269 9.919351 8.472059</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.06472024 0.06472024 0.1466992</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_005-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Attribute id="Cylinder_010" type="">
+      <transformation name="location" type="Translate">17.86131 9.920934 14.1857</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.06681438 0.06681438 0.1514459</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_005-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cylinder_010-mesh" type="trianglemesh">
+      <reference name="material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cylinder_010-mesh_0-material" type="Material">ChromeMinnaertBlinn-material</reference>
+      <reference name="Cylinder_010-mesh_0" type="Include">mesh-data-Cylinder_010-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Cylinder_011" type="">
+      <transformation name="location" type="Translate">8.78569 9.926276 13.96166</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.08391458 0.08391458 0.1902064</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_004-mesh</reference>
+      <reference name="instance_material" type="Material">ChromeMinnaertBlinn-material</reference>
+   </Attribute>
+   <Shape id="Cylinder_012-mesh" type="trianglemesh">
+      <reference name="Cylinder_012-mesh_0" type="Include">mesh-data-Cylinder_012-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="Grey_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd</parameter>
+   </Material>
+   <Material id="Grey_002-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd</parameter>
+   </Material>
+   <Material id="HalfRed-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-6.spd</parameter>
+   </Material>
+   <Material id="HalfRed_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd</parameter>
+   </Material>
+   <Material id="HangLampReflector-material" type="uber">
+      <parameter name="Kd" type="rgb">0.800000 0.800000 0.800000</parameter>
+      <parameter name="index" type="float">1.0</parameter>
+   </Material>
+   <Material id="Khaki-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd</parameter>
+   </Material>
+   <Attribute id="Lamp_001" type="">
+      <transformation name="location" type="Translate">-12.3701 1.334113 16.64647</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Lamp_001-light</reference>
+   </Attribute>
+   <LightSource id="Lamp_001-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/HangingLight.spd</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+      <parameter name="coneangle" type="float">36.750820</parameter>
+   </LightSource>
+   <Attribute id="Lamp_008" type="">
+      <transformation name="location" type="Translate">-22.382 23.44714 17.0124</transformation>
+      <transformation name="rotationZ" type="Rotate">-0.000001 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-0.000001 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">48.090290 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Lamp_008-light</reference>
+   </Attribute>
+   <LightSource id="Lamp_008-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+      <parameter name="coneangle" type="float">55.865100</parameter>
+   </LightSource>
+   <Attribute id="Lamp_009" type="">
+      <transformation name="location" type="Translate">-22.382 23.73127 16.61774</transformation>
+      <transformation name="rotationZ" type="Rotate">120 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">179.997400 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">1.269313 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Lamp_009-light</reference>
+   </Attribute>
+   <LightSource id="Lamp_009-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+      <parameter name="coneangle" type="float">45.566380</parameter>
+   </LightSource>
+   <Attribute id="Line178954_13_-_Defau" type="">
+      <transformation name="location" type="Translate">-22.39316 23.7237 17.11914</transformation>
+      <transformation name="rotationZ" type="Rotate">-180 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.00793595 0.00793595 0.00793595</transformation>
+      <reference name="instance_geometry" type="Object">Line178954_13_-_Defau-mesh</reference>
+      <reference name="instance_material" type="Material">HalfRed-material</reference>
+   </Attribute>
+   <Shape id="Line178954_13_-_Defau-mesh" type="trianglemesh">
+      <reference name="material" type="Material">HalfRed-material</reference>
+      <reference name="Line178954_13_-_Defau-mesh_0-material" type="Material">HalfRed-material</reference>
+      <reference name="Line178954_13_-_Defau-mesh_0" type="Include">mesh-data-Line178954_13_-_Defau-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="Magenta-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd</parameter>
+   </Material>
+   <Material id="Material-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-10.spd</parameter>
+   </Material>
+   <Material id="Material_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd</parameter>
+   </Material>
+   <Material id="Material_002-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd</parameter>
+   </Material>
+   <Material id="Material_003-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-13.spd</parameter>
+   </Material>
+   <Material id="Material_004-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-14.spd</parameter>
+   </Material>
+   <Material id="Material_005-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-15.spd</parameter>
+   </Material>
+   <Material id="Material_007-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd</parameter>
+   </Material>
+   <Material id="Material_008-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-17.spd</parameter>
+   </Material>
+   <Material id="Material__172757-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd</parameter>
+   </Material>
+   <Material id="MediumGrey-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-21.spd</parameter>
+   </Material>
+   <Shape id="Mesh_006-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material_001-material</reference>
+      <reference name="Mesh_006-mesh_0-material" type="Material">Material_001-material</reference>
+      <reference name="Mesh_006-mesh_0" type="Include">mesh-data-Mesh_006-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Plane" type="">
+      <transformation name="location" type="Translate">-5.508096 7.921134 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">22.08261 13.84968 23.16144</transformation>
+      <reference name="instance_geometry" type="Object">Plane-mesh</reference>
+      <reference name="instance_material" type="Material">Material_002-material</reference>
+   </Attribute>
+   <Shape id="Plane-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material_002-material</reference>
+      <reference name="Plane-mesh_0-material" type="Material">Material_002-material</reference>
+      <reference name="Plane-mesh_0" type="Include">mesh-data-Plane-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Plane_001" type="">
+      <transformation name="location" type="Translate">-5.508096 7.921134 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">22.08261 13.84968 23.16144</transformation>
+      <reference name="instance_geometry" type="Object">Plane_001-mesh</reference>
+      <reference name="instance_material" type="Material">Material_004-material</reference>
+   </Attribute>
+   <Shape id="Plane_001-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material_004-material</reference>
+      <reference name="Plane_001-mesh_0-material" type="Material">Material_004-material</reference>
+      <reference name="Plane_001-mesh_0" type="Include">mesh-data-Plane_001-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Plane_002" type="">
+      <transformation name="location" type="Translate">-5.508096 7.921134 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">22.08261 13.84968 23.16144</transformation>
+      <reference name="instance_geometry" type="Object">Plane_002-mesh</reference>
+      <reference name="instance_material" type="Material">Grey_002-material</reference>
+   </Attribute>
+   <Shape id="Plane_002-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Grey_002-material</reference>
+      <reference name="Plane_002-mesh_0-material" type="Material">Grey_002-material</reference>
+      <reference name="Plane_002-mesh_0" type="Include">mesh-data-Plane_002-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="Plane_003" type="">
+      <transformation name="location" type="Translate">6.03366 30.81228 -13.36096</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">35.43666 22.22501 37.1679</transformation>
+      <reference name="instance_geometry" type="Object">Plane_005-mesh</reference>
+      <reference name="instance_material" type="Material">Grey_001-material</reference>
+   </Attribute>
+   <Shape id="Plane_005-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Grey_001-material</reference>
+      <reference name="Plane_005-mesh_0-material" type="Material">Grey_001-material</reference>
+      <reference name="Plane_005-mesh_0" type="Include">mesh-data-Plane_005-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="Red-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-22.spd</parameter>
+   </Material>
+   <Attribute id="SneakyPoint" type="">
+      <transformation name="location" type="Translate">16.3437 18.7382 19.36953</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">SneakyPoint-light</reference>
+   </Attribute>
+   <LightSource id="SneakyPoint-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+   </LightSource>
+   <Attribute id="Sphere" type="">
+      <transformation name="location" type="Translate">-12.40319 1.332148 15.19984</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1.731537 1.731537 1.731537</transformation>
+      <reference name="instance_geometry" type="Object">Sphere_002-mesh</reference>
+   </Attribute>
+   <Shape id="Sphere_001-mesh" type="trianglemesh">
+      <reference name="Sphere_001-mesh_0-material" type="Material">HangLampReflector-material</reference>
+      <reference name="Sphere_001-mesh_0" type="Include">mesh-data-Sphere_001-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">HangLampReflector-material</reference>
+   </Shape>
+   <Attribute id="Sphere_002" type="">
+      <transformation name="location" type="Translate">-12.40323 1.335135 15.1799</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1.488948 1.488948 1.488948</transformation>
+      <reference name="instance_geometry" type="Object">Sphere_001-mesh</reference>
+      <reference name="instance_material" type="Material">HangLampReflector-material</reference>
+   </Attribute>
+   <Shape id="Sphere_002-mesh" type="trianglemesh">
+      <reference name="Sphere_002-mesh_0" type="Include">mesh-data-Sphere_002-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="WallLight" type="">
+      <transformation name="location" type="Translate">-39 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90.000040 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">WallLight-mesh</reference>
+      <reference name="instance_material" type="Material">WallLight-material</reference>
+   </Attribute>
+   <Material id="WallLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Shape id="WallLight-mesh" type="trianglemesh">
+      <reference name="material" type="Material">WallLight-material</reference>
+      <reference name="WallLight-mesh_0-material" type="Material">WallLight-material</reference>
+      <reference name="WallLight-mesh_0" type="Include">mesh-data-WallLight-mesh_0.pbrt</reference>
+      <reference name="area-light" type="AreaLightSource">WallLight-mesh-area-light</reference>
+   </Shape>
+</pbrt_xml>

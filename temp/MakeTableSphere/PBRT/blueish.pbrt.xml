@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">320</parameter>
+      <parameter name="yresolution" type="integer">240</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">512</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="path">
+      <parameter name="maxdepth" type="integer">10</parameter>
+   </SurfaceIntegrator>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">-0.5 -5 3.5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">85.000040 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">37.849287</parameter>
+   </Camera>
+   <Attribute id="Ceiling" type="">
+      <transformation name="location" type="Translate">0 0 20</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">180.000100 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane_004-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Shape id="Cube_001-mesh" type="trianglemesh">
+      <reference name="Cube_001-mesh_0-material" type="Material">TableMaterial-material</reference>
+      <reference name="Cube_001-mesh_0" type="Include">mesh-data-Cube_001-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">TableMaterial-material</reference>
+   </Shape>
+   <Shape id="Cylinder-mesh" type="trianglemesh">
+      <reference name="Cylinder-mesh_0-material" type="Material">TableMaterial-material</reference>
+      <reference name="Cylinder-mesh_0" type="Include">mesh-data-Cylinder-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">TableMaterial-material</reference>
+   </Shape>
+   <Shape id="Cylinder_001-mesh" type="trianglemesh">
+      <reference name="Cylinder_001-mesh_0-material" type="Material">TableMaterial-material</reference>
+      <reference name="Cylinder_001-mesh_0" type="Include">mesh-data-Cylinder_001-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">TableMaterial-material</reference>
+   </Shape>
+   <Shape id="Cylinder_002-mesh" type="trianglemesh">
+      <reference name="Cylinder_002-mesh_0-material" type="Material">TableMaterial-material</reference>
+      <reference name="Cylinder_002-mesh_0" type="Include">mesh-data-Cylinder_002-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">TableMaterial-material</reference>
+   </Shape>
+   <Shape id="Cylinder_003-mesh" type="trianglemesh">
+      <reference name="Cylinder_003-mesh_0-material" type="Material">TableMaterial-material</reference>
+      <reference name="Cylinder_003-mesh_0" type="Include">mesh-data-Cylinder_003-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">TableMaterial-material</reference>
+   </Shape>
+   <Attribute id="Floor" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane-mesh</reference>
+      <reference name="instance_material" type="Material">FloorMaterial-material</reference>
+   </Attribute>
+   <Material id="FloorMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd</parameter>
+   </Material>
+   <Attribute id="Icosphere" type="">
+      <transformation name="location" type="Translate">-1 5 3.09</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Icosphere-mesh</reference>
+      <reference name="instance_material" type="Material">SphereMaterial-material</reference>
+   </Attribute>
+   <Shape id="Icosphere-mesh" type="trianglemesh">
+      <reference name="material" type="Material">SphereMaterial-material</reference>
+      <reference name="Icosphere-mesh_0-material" type="Material">SphereMaterial-material</reference>
+      <reference name="Icosphere-mesh_0" type="Include">mesh-data-Icosphere-mesh_0.pbrt</reference>
+   </Shape>
+   <Attribute id="LightAbove" type="">
+      <transformation name="location" type="Translate">-1 1 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">LightAbove-light</reference>
+   </Attribute>
+   <LightSource id="LightAbove-light" type="point">
+      <parameter name="I" type="spectrum">300:100 800:10</parameter>
+   </LightSource>
+   <Shape id="Plane-mesh" type="trianglemesh">
+      <reference name="material" type="Material">FloorMaterial-material</reference>
+      <reference name="Plane-mesh_0-material" type="Material">FloorMaterial-material</reference>
+      <reference name="Plane-mesh_0" type="Include">mesh-data-Plane-mesh_0.pbrt</reference>
+   </Shape>
+   <Shape id="Plane_001-mesh" type="trianglemesh">
+      <reference name="Plane_001-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_001-mesh_0" type="Include">mesh-data-Plane_001-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">WallMaterial-material</reference>
+   </Shape>
+   <Shape id="Plane_002-mesh" type="trianglemesh">
+      <reference name="Plane_002-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_002-mesh_0" type="Include">mesh-data-Plane_002-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">WallMaterial-material</reference>
+   </Shape>
+   <Shape id="Plane_003-mesh" type="trianglemesh">
+      <reference name="Plane_003-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_003-mesh_0" type="Include">mesh-data-Plane_003-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">WallMaterial-material</reference>
+   </Shape>
+   <Shape id="Plane_004-mesh" type="trianglemesh">
+      <reference name="material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_004-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_004-mesh_0" type="Include">mesh-data-Plane_004-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="SphereMaterial-material" type="anisoward">
+      <parameter name="Kd" type="spectrum">300:0.1 800:0.7</parameter>
+      <parameter name="Ks" type="spectrum">300:0.3 800:0.3</parameter>
+      <parameter name="alphaU" type="float">0.1</parameter>
+      <parameter name="alphaV" type="float">0.1</parameter>
+   </Material>
+   <Attribute id="TableLegBackLeft" type="">
+      <transformation name="location" type="Translate">-2.75 6.25 1</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.1 0.1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_002-mesh</reference>
+      <reference name="instance_material" type="Material">TableMaterial-material</reference>
+   </Attribute>
+   <Attribute id="TableLegBackRight" type="">
+      <transformation name="location" type="Translate">2.75 6.25 1</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.1 0.1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder-mesh</reference>
+      <reference name="instance_material" type="Material">TableMaterial-material</reference>
+   </Attribute>
+   <Attribute id="TableLegFrontLeft" type="">
+      <transformation name="location" type="Translate">-2.75 3.75 1</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.1 0.1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_003-mesh</reference>
+      <reference name="instance_material" type="Material">TableMaterial-material</reference>
+   </Attribute>
+   <Attribute id="TableLegFrontRight" type="">
+      <transformation name="location" type="Translate">2.75 3.75 1</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">0.1 0.1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cylinder_001-mesh</reference>
+      <reference name="instance_material" type="Material">TableMaterial-material</reference>
+   </Attribute>
+   <Material id="TableMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd</parameter>
+   </Material>
+   <Attribute id="TableTop" type="">
+      <transformation name="location" type="Translate">0 5 2</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">3 1.5 0.1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_001-mesh</reference>
+      <reference name="instance_material" type="Material">TableMaterial-material</reference>
+   </Attribute>
+   <Attribute id="WallBack" type="">
+      <transformation name="location" type="Translate">0 10 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90.000040 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane_001-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Attribute id="WallLeft" type="">
+      <transformation name="location" type="Translate">-10 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">90.000040 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane_002-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Material id="WallMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd</parameter>
+   </Material>
+   <Attribute id="WallRight" type="">
+      <transformation name="location" type="Translate">10 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">-90.000040 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane_003-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+</pbrt_xml>

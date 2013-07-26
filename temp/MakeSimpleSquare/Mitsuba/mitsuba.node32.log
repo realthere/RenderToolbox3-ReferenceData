@@ -1,0 +1,69 @@
+2013-07-26 18:19:57 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 18:19:57 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSimpleSquare/Mitsuba/SimpleSquare-020.xml" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 18:19:57 INFO  main [spectrum.cpp:585] "mccBabel-20.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 18:19:57 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 18:19:57 WARN  main [properties.cpp:78] Property "irradiance" was specified multiple times!
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/directional.so" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 18:19:57 INFO  main [SerializedMesh] Loading shape 0 from "SimpleSquare-020Unadjusted.serialized" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 18:19:57 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 18:19:57 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (2 primitives) ..
+2013-07-26 18:19:57 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
+2013-07-26 18:19:57 INFO  ren0 [SamplingIntegrator] Starting render job (50x50, 8 samples, 8 cores, SSE2 enabled) ..22013-07-26 18:19:57 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSimpleSquare/Mitsuba/SimpleSquare-020.exr" ..
+2013-07-26 18:19:57 INFO  ren0 [RenderQueue] Render time: 0.2620s
+2013-07-26 18:19:57 INFO  ren0 [RenderQueue] Render time: 0.2420s
+2013-07-26 18:19:57 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 510.016 K
+    -  Shadow rays traced : 490.016 K
+------------------------------------------------------------
+2013-07-26 18:19:57 INFO  ren0 [RenderQueue] Render time: 0.2470s
+2013-07-26 18:19:57 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 510.016 K
+    -  Shadow rays traced : 490.016 K
+------------------------------------------------------------
+2013-07-26 18:19:57 INFO  ren0 [RenderQueue] Render time: 0.2220s
+2013-07-26 18:19:57 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 510.016 K
+    -  Shadow rays traced : 490.016 K
+------------------------------------------------------------

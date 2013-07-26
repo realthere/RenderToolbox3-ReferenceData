@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Material id="DragonMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd</parameter>
+   </Material>
+   <Material id="FloorMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0.5 800:0.5</parameter>
+   </Material>
+   <Material id="WallMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0.75 800:0.75</parameter>
+   </Material>
+   <merge id="LightY-mesh">
+      <reference name="area-light" type="AreaLightSource">LightY-mesh-area-light</reference>
+   </merge>
+   <AreaLightSource id="LightY-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <merge id="LightX-mesh">
+      <reference name="area-light" type="AreaLightSource">LightX-mesh-area-light</reference>
+   </merge>
+   <AreaLightSource id="LightX-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+</pbrt_xml>

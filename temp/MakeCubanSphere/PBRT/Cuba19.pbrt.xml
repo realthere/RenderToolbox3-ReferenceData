@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">200</parameter>
+      <parameter name="yresolution" type="integer">160</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">0 -15 3</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">80 1 0 0</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">40.176374</parameter>
+   </Camera>
+   <Shape id="Cube-mesh" type="trianglemesh">
+      <reference name="Cube-mesh_0-material" type="Material">CubeMaterial-material</reference>
+      <reference name="Cube-mesh_0" type="Include">mesh-data-Cube-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">CubeMaterial-material</reference>
+   </Shape>
+   <Material id="CubeMaterial-material" type="plastic">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd</parameter>
+      <parameter name="Ks" type="spectrum">300:0.75</parameter>
+      <parameter name="roughness" type="float">0.003</parameter>
+   </Material>
+   <Attribute id="MrCube" type="">
+      <transformation name="location" type="Translate">1.558882 -4.225325 1.363227</transformation>
+      <transformation name="rotationZ" type="Rotate">-15.000010 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0.000010 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">30.000010 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube-mesh</reference>
+      <reference name="instance_material" type="Material">CubeMaterial-material</reference>
+   </Attribute>
+   <Attribute id="RearLamp" type="">
+      <transformation name="location" type="Translate">22.77135 -17.47647 0.3446693</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">RearLamp-light</reference>
+   </Attribute>
+   <LightSource id="RearLamp-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </LightSource>
+   <Attribute id="Sphere" type="">
+      <transformation name="location" type="Translate">5.032 -1.422861 0.4728882</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Sphere-mesh</reference>
+      <reference name="instance_material" type="Material">SphereMaterial-material</reference>
+   </Attribute>
+   <Shape id="Sphere-mesh" type="trianglemesh">
+      <reference name="material" type="Material">SphereMaterial-material</reference>
+      <reference name="Sphere-mesh_0-material" type="Material">SphereMaterial-material</reference>
+      <reference name="Sphere-mesh_0" type="Include">mesh-data-Sphere-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="SphereMaterial-material" type="plastic">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-1.spd</parameter>
+      <parameter name="Ks" type="spectrum">300:0.75</parameter>
+      <parameter name="roughness" type="float">0.003</parameter>
+   </Material>
+   <Attribute id="Sun1" type="">
+      <transformation name="location" type="Translate">-2.730917 -11.81851 -6.451714</transformation>
+      <transformation name="rotationZ" type="Rotate">-245.173700 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">29.739150 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">-133.730700 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Sun1-light</reference>
+   </Attribute>
+   <LightSource id="Sun1-light" type="distant">
+      <parameter name="L" type="spectrum">400:10 700:1</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+   </LightSource>
+   <Attribute id="Sun2" type="">
+      <transformation name="location" type="Translate">0.6106256 13.15332 1.74115</transformation>
+      <transformation name="rotationZ" type="Rotate">193.037100 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">-10.128590 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">91.496190 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Sun2-light</reference>
+   </Attribute>
+   <LightSource id="Sun2-light" type="distant">
+      <parameter name="L" type="spectrum">400:1 700:10</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+   </LightSource>
+   <Attribute id="TopLamp" type="">
+      <transformation name="location" type="Translate">-1.490017 -5.01124 4.64047</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">TopLamp-light</reference>
+   </Attribute>
+   <LightSource id="TopLamp-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/DimFlat.spd</parameter>
+   </LightSource>
+</pbrt_xml>

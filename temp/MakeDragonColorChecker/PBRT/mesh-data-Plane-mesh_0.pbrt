@@ -1,0 +1,5 @@
+# mesh data Plane-mesh_0
+Shape "trianglemesh" 
+  "point P" [-1 -1 0 1 -1 0 1 1 0 -1 1 0] 
+  "normal N" [0 0 1 0 0 1 0 0 1 0 0 1] 
+  "integer indices" [1 2 0 0 2 3] 

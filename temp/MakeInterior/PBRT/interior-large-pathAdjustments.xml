@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <merge id="WallLight-mesh">
+      <reference name="area-light" type="AreaLightSource">WallLight-mesh-area-light</reference>
+   </merge>
+   <AreaLightSource id="WallLight-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <merge id="CameraLight-mesh">
+      <reference name="area-light" type="AreaLightSource">CameraLight-mesh-area-light</reference>
+   </merge>
+   <AreaLightSource id="CameraLight-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <merge id="SneakyPoint-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+   </merge>
+   <merge id="Lamp_009-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+   </merge>
+   <merge id="Lamp_008-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd</parameter>
+   </merge>
+   <merge id="Lamp_001-light" type="spot">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/HangingLight.spd</parameter>
+   </merge>
+   <Material id="Red-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-22.spd</parameter>
+   </Material>
+   <Material id="MediumGrey-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-21.spd</parameter>
+   </Material>
+   <Material id="Material__210043-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd</parameter>
+   </Material>
+   <Material id="Material__172757-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd</parameter>
+   </Material>
+   <Material id="Material_009-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd</parameter>
+   </Material>
+   <Material id="Material_008-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-17.spd</parameter>
+   </Material>
+   <Material id="Material_007-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd</parameter>
+   </Material>
+   <Material id="Material_005-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-15.spd</parameter>
+   </Material>
+   <Material id="Material_004-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-14.spd</parameter>
+   </Material>
+   <Material id="Material_003-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-13.spd</parameter>
+   </Material>
+   <Material id="Material_002-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd</parameter>
+   </Material>
+   <Material id="Material_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd</parameter>
+   </Material>
+   <Material id="Material-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-10.spd</parameter>
+   </Material>
+   <Material id="Magenta-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd</parameter>
+   </Material>
+   <Material id="Khaki-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd</parameter>
+   </Material>
+   <Material id="HalfRed_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd</parameter>
+   </Material>
+   <Material id="HalfRed-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-6.spd</parameter>
+   </Material>
+   <Material id="Grey_002-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd</parameter>
+   </Material>
+   <Material id="Grey_001-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd</parameter>
+   </Material>
+   <Material id="ChromeMinnaertBlinn-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd</parameter>
+   </Material>
+   <Material id="WallLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Material id="AreaLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Material id="HangingLampReflector-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="path">
+      <parameter name="maxdepth" type="integer">5</parameter>
+   </SurfaceIntegrator>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">512</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+</pbrt_xml>

@@ -1,0 +1,209 @@
+# Film
+Film "image" 
+  "integer xresolution" [640] 
+  "integer yresolution" [480] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate -95.000050 1.000000 0.000000 0.000000
+Rotate 0 0 1 0
+Rotate -20.000010 0.000000 0.000000 1.000000
+Translate -5.000000 10.000000 -1.577643
+# Camera-camera
+Camera "perspective" 
+  "float fov" [37.849287] 
+
+WorldBegin
+
+# texture diceTexture
+Texture "diceTexture" "spectrum" "imagemap" 
+  "string filename" "/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/Dice/DiceUVColored.exr" 
+  "float gamma" [1] 
+  "float maxanisotropy" [20] 
+  "bool trilinear" "false" 
+  "float udelta" [0.0] 
+  "float uscale" [1.0] 
+  "float vdelta" [0.0] 
+  "float vscale" [1.0] 
+  "string wrap" "repeat" 
+
+# material Floor-material
+MakeNamedMaterial "Floor-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-1.spd" 
+
+# material Textured-material
+MakeNamedMaterial "Textured-material" 
+  "string type" "anisoward" 
+  "texture Kd" "diceTexture" 
+  "spectrum Ks" [300 0 800 0] 
+  "float alphaU" [0.1] 
+  "float alphaV" [0.1] 
+
+ObjectBegin "Cube_000-mesh"
+# object Cube_000-mesh
+NamedMaterial "Textured-material"
+Include "mesh-data-Cube_000-mesh_0.pbrt"
+NamedMaterial "Textured-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_001-mesh"
+# object Cube_001-mesh
+NamedMaterial "Textured-material"
+Include "mesh-data-Cube_001-mesh_0.pbrt"
+NamedMaterial "Textured-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_002-mesh"
+# object Cube_002-mesh
+NamedMaterial "Textured-material"
+Include "mesh-data-Cube_002-mesh_0.pbrt"
+NamedMaterial "Textured-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_003-mesh"
+# object Cube_003-mesh
+NamedMaterial "Textured-material"
+Include "mesh-data-Cube_003-mesh_0.pbrt"
+NamedMaterial "Textured-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_001-mesh"
+# object Plane_001-mesh
+NamedMaterial "Floor-material"
+NamedMaterial "Floor-material"
+Include "mesh-data-Plane_001-mesh_0.pbrt"
+
+ObjectEnd
+
+# Die1
+AttributeBegin
+TransformBegin Translate -3.579109 3.95222 5.59663
+TransformBegin Rotate 123.742200 0.000000 0.000000 1.000000
+TransformBegin Rotate 134.167300 0.000000 1.000000 0.000000
+TransformBegin Rotate 38.202950 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Die2
+AttributeBegin
+TransformBegin Translate 3.492849 -1.151549 1.314112
+TransformBegin Rotate 221.992300 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.880480 0.000000 1.000000 0.000000
+TransformBegin Rotate 5.629823 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_000-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Die3
+AttributeBegin
+TransformBegin Translate -0.6675051 4.531545 1.69956
+TransformBegin Rotate 136.882800 0.000000 0.000000 1.000000
+TransformBegin Rotate -20.831210 0.000000 1.000000 0.000000
+TransformBegin Rotate -19.983810 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Die4
+AttributeBegin
+TransformBegin Translate -1.967809 -0.4165819 1.373433
+TransformBegin Rotate 24.438540 0.000000 0.000000 1.000000
+TransformBegin Rotate -3.252356 0.000000 1.000000 0.000000
+TransformBegin Rotate 46.197670 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Floor
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point
+AttributeBegin
+TransformBegin Translate -5 -5 20
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sun
+AttributeBegin
+TransformBegin Translate 10 -10 5
+TransformBegin Rotate 45.000020 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 60.000030 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source Sun-light
+LightSource "distant" 
+  "spectrum L" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

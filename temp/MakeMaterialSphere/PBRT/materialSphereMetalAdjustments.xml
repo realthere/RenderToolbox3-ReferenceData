@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Material id="Material-material" type="metal">
+      <parameter name="roughness" type="float">0.080000</parameter>
+      <parameter name="eta" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/PBRTMetals/Au.eta.spd</parameter>
+      <parameter name="k" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/PBRTMetals/Au.k.spd</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+</pbrt_xml>

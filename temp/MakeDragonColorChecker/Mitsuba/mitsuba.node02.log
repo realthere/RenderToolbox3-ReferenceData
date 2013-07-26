@@ -1,0 +1,91 @@
+2013-07-26 17:30:10 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:30:10 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonColorChecker/Mitsuba/macbethDragon-19.xml" ..
+2013-07-26 17:30:10 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 17:30:10 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 17:30:10 INFO  main [spectrum.cpp:585] "mccBabel-22.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:30:10 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:30:10 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-07-26 17:30:10 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 0 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 1 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 2 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 3 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 4 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 5 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:10 INFO  main [SerializedMesh] Loading shape 6 from "macbethDragon-22Unadjusted.serialized" ..
+2013-07-26 17:30:11 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 17:30:11 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 17:30:11 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 17:30:11 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 17:30:11 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (100042 primitives) ..
+2013-07-26 17:30:12 INFO  ren0 [KDTreeBase] Finished -- took 1905 ms.
+2013-07-26 17:30:13 INFO  ren0 [SamplingIntegrator] Starting render job (150x120, 8 samples, 8 cores, SSE2 enabled) ..22013-07-26 17:30:16 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonColorChecker/Mitsuba/macbethDragon-20.exr" ..
+013-07-26 17:30:16 INFO  ren0 [RenderQueue] Render time: 5.2140s
+2013-07-26 17:30:16 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 4.748 M
+    -  Shadow rays traced : 4.430 M
+------------------------------------------------------------
+2013-07-26 17:30:16 INFO  ren0 [RenderQueue] Render time: 5.6440s
+2013-07-26 17:30:16 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 4.748 M
+    -  Shadow rays traced : 4.429 M
+------------------------------------------------------------
+2013-07-26 17:30:16 INFO  ren0 [RenderQueue] Render time: 5.7870s
+2013-07-26 17:30:16 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 4.748 M
+    -  Shadow rays traced : 4.430 M
+------------------------------------------------------------
+2013-07-26 17:30:16 INFO  ren0 [RenderQueue] Render time: 5.9720s
+2013-07-26 17:30:16 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 4.748 M
+    -  Shadow rays traced : 4.430 M
+------------------------------------------------------------

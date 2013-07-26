@@ -1,0 +1,104 @@
+2013-07-26 17:39:32 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:39:32 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/Mitsuba/interior-small-direct-spots-only.xml" ..
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-18.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-20.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-21.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-2.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-5.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-4.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-14.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-8.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-9.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-10.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-13.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-17.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-16.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-11.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-15.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-22.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-12.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-7.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-19.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "mccBabel-6.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 0 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 1 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:39:32 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 2 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 3 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 4 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 5 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 6 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-07-26 17:39:32 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 7 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 8 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 9 from "interior-small-direct-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 10 from "interior-small-direct-spots-onlyUnadjusted2013-07-26 17:392013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:39:32 WARN  main [properties.cpp:78] Property "intensity" wa2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:39:32 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-07-26 17:39:32013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "HangingLight.spd": loaded a spectral power distribution wi2013-07-26 17:39:32 INFO  main [spectrum.cpp:585] "Ha2013-07-26 17:39:32 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 12 from "interior-small-direct-spots-onlyUnadju2013-07-26 17:39:32 2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 13 from "interior-small-direct-spots-onlyUnad2013-07-26 17:39:32 IN2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 14 from "interior-small-direct-spots-onlyUn2013-07-26 17:39:32 INFO2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 15 from "interior-small-direct-spots-only2013-07-26 17:39:32 INFO  2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 16 from "interior-small-direct-spots-on2013-07-26 17:39:32 INFO  ma2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 17 from "interior-small-direct-spots-2013-07-26 17:39:32 INFO  main2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 18 from "interior-small-direct-spot2013-07-26 17:39:32 INFO  main [2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 19 from "interior-small-direct-sp2013-07-26 17:39:32 INFO  main [Se2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 20 from "interior-small-direct-2013-07-26 17:39:32 INFO  main [Seri2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 21 from "interior-small-direc2013-07-26 17:39:32 INFO  main [Serial2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (48 primitives) ..22013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 22 from "interior-small-dir2013-07-26 17:39:32 INFO  main [Serializ2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 23 from "interior-small-d2013-07-26 17:39:32 INFO  main [Serialized2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 24 from "interior-small2013-07-26 17:39:32 INFO  main [SerializedMe2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 25 from "interior-sma2013-07-26 17:39:32 INFO  main [SerializedMesh2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 26 from "interior-s2013-07-26 17:39:32 INFO  main [SerializedMesh] 2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (320 pri2013-07-26 12013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 4 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 27 from "interior2013-07-26 17:39:32 INFO  main [SerializedMesh] Lo2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 28 from "interi2013-07-26 17:39:32 INFO  main [SerializedMesh] Load2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (3202013-07-26 17:392013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 4 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 29 from "inte2013-07-26 17:39:32 INFO  main [SerializedMesh] Loadin2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (32013-07-26 17:39:32013-07-26 17:39:32 INFO  main [KDTreeBase] Finished -- took 4 ms.
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 30 from "in2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading 2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 31 from "2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading sh2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 32 from2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shap2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 33 fr2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 33 from "interior-small-path-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+202013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 34 2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 342013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 32013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 35 f2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 36 fro2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading sha2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 37 from 2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading s2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 38 from "i2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 39 from "int2013-07-26 17:39:32 INFO  main [SerializedMesh] Loadi2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 40 from "inter2013-07-26 17:39:32 INFO  main [SerializedMesh] Loa2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 41 from "interior-small-path-spots-onlyUnadjusted.serialized" ..
+2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 42 from "interior-2013-07-26 17:39:32 INFO  main [SerializedMesh]2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 43 from "interior-sm2013-07-26 17:39:32 INFO  main [SerializedMes2013-07-26 17:39:32 INFO  main [SerializedMesh] Loading shape 44 from "interior-smal2013-07-26 17:39:32 INFO  main [PluginManag2013-07-26 17:39:32 INFO  main [PluginManager2013-07-26 17:39:32 INFO  main [PluginManag2013-07-26 17:39:32 INFO  main [PluginManage2013-07-26 17:39:32 INFO  main [PluginManag2013-07-26 17:39:32 INFO  main [PluginManag2013-07-26 17:39:32 INFO  main [PluginManag2013-07-26 17:39:32 INFO  main [PluginManager] 2013-07-26 17:39:32 INFO  ren0 [KDTreeBase]2013-07-26 17:39:32 INFO  ren0 [KDTreeBase] Constr2013-07-26 17:39:33 INFO  ren0 [KDTreeBase]2013-07-26 17:39:33 INFO  2013-07-26 17:39:33 INFO  ren0 [SamplingInt2013-07-26 17:39:33 INFO  ren0 [SamplingIntegrator] Starting render job (3202013-07-26 17:39:43 INFO  ren0 [HDRFilm] Writ2013-07-26 17:41:01 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/Mitsuba/interior-small-path-spots-only.exr" ..
+] Render time: 10.7790s
+2013-07-26 17:39:43 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/instance.so [Instanced geometry]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/shapegroup.so [Grouped geometry for instancing]
+    -  plugins/spot.so [Spot light]
+
+  * General :
+    -  Normal rays traced : 20.246 M
+    -  Shadow rays traced : 19.127 M
+------------------------------------------------------------
+2013-07-26 17:41:01 INFO  ren0 [RenderQueue] Render time: 1.4726m
+2013-07-26 17:41:01 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/instance.so [Instanced geometry]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/path.so [MI path tracer]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/shapegroup.so [Grouped geometry for instancing]
+    -  plugins/spot.so [Spot light]
+
+  * General :
+    -  Normal rays traced : 214.300 M
+    -  Shadow rays traced : 166.499 M
+
+  * Path tracer :
+    -  Average path length : 5.20 (204.45 M / 39.32 M)
+------------------------------------------------------------

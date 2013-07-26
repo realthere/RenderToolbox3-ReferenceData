@@ -1,0 +1,231 @@
+# Film
+Film "image" 
+  "integer xresolution" [150] 
+  "integer yresolution" [120] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate -75.000030 1.000000 0.000000 0.000000
+Rotate 0 0 1 0
+Rotate 45.000020 0.000000 0.000000 1.000000
+Translate 15 15 -10
+# Camera-camera
+Camera "perspective" 
+  "float fov" [40.176374] 
+
+WorldBegin
+
+# material DragonMaterial-material
+MakeNamedMaterial "DragonMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd" 
+
+# material FloorMaterial-material
+MakeNamedMaterial "FloorMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 0.5 800 0.5] 
+
+# material ReflectorMaterial-material
+MakeNamedMaterial "ReflectorMaterial-material" 
+  "string type" "uber" 
+  "rgb Kd" [1 1 1] 
+  "float index" [1.0] 
+
+# material WallMaterial-material
+MakeNamedMaterial "WallMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 0.75 800 0.75] 
+
+ObjectBegin "LightX-mesh"
+# object LightX-mesh
+NamedMaterial "ReflectorMaterial-material"
+NamedMaterial "ReflectorMaterial-material"
+Include "mesh-data-LightX-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "LightY-mesh"
+# object LightY-mesh
+NamedMaterial "ReflectorMaterial-material"
+NamedMaterial "ReflectorMaterial-material"
+Include "mesh-data-LightY-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane-mesh"
+# object Plane-mesh
+NamedMaterial "FloorMaterial-material"
+NamedMaterial "FloorMaterial-material"
+Include "mesh-data-Plane-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane_001-mesh"
+# object Plane_001-mesh
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_001-mesh_0.pbrt"
+NamedMaterial "WallMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_002-mesh"
+# object Plane_002-mesh
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_002-mesh_0.pbrt"
+NamedMaterial "WallMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_003-mesh"
+# object Plane_003-mesh
+NamedMaterial "WallMaterial-material"
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_003-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "default-mesh"
+# object default-mesh
+NamedMaterial "DragonMaterial-material"
+NamedMaterial "DragonMaterial-material"
+Include "mesh-data-default-mesh_0.pbrt"
+
+ObjectEnd
+
+# Ceiling
+AttributeBegin
+TransformBegin Translate 0 0 20
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 180.000100 1.000000 0.000000 0.000000
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Dragon
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate -13.000010 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 90.000010 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "default-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Floor
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 10
+ObjectInstance "Plane-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# LightX
+AttributeBegin
+TransformBegin Translate -11 0 11
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 120.000100 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source LightX-mesh-area-light
+AreaLightSource "diffuse" 
+  "spectrum L" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+  "integer nsamples" [8] 
+# object LightX-mesh
+NamedMaterial "ReflectorMaterial-material"
+NamedMaterial "ReflectorMaterial-material"
+Include "mesh-data-LightX-mesh_0.pbrt"
+
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# LightY
+AttributeBegin
+TransformBegin Translate 0 -11 11
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate -120.000100 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source LightY-mesh-area-light
+AreaLightSource "diffuse" 
+  "spectrum L" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+  "integer nsamples" [8] 
+# object LightY-mesh
+NamedMaterial "ReflectorMaterial-material"
+NamedMaterial "ReflectorMaterial-material"
+Include "mesh-data-LightY-mesh_0.pbrt"
+
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallX
+AttributeBegin
+TransformBegin Translate 10 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate -90.000040 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 10
+ObjectInstance "Plane_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallY
+AttributeBegin
+TransformBegin Translate 0 10 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 90.000040 1.000000 0.000000 0.000000
+TransformBegin Scale 10 10 10
+ObjectInstance "Plane_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

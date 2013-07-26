@@ -1,0 +1,96 @@
+2013-07-26 18:18:01 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 18:18:01 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/portable-scenes/Mitsuba/materialSphereMatte.xml" ..2013-07-26 18:18:01 INFO  main [spectrum.cpp:585] "mccBabel-7.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/ward.so" ..
+2013-2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/bitmap.so2013-2013-07-26 18:18:01 INFO  main [BitmapTexture] Loading texture "earthbump1k-stretch-rgb.2013-2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/lanczos.so2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/scale.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/bump.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 18:18:01 INFO  main [SerializedMesh] Loading shape 0 from "materialSphereWardUnadjusted.serialized" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 18:18:01 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 18:18:01 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (5120 primitives) ..
+2013-07-26 18:18:02 INFO  ren0 [KDTreeBase] Finished -- took 741 ms.
+2013-07-26 18:18:02 INFO  ren0 [SamplingIntegrator] Starting render job (200x160, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 18:18:05 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/portable-scenes/Mitsuba/materialSphereWard.exr" ..
+r" ..
+ns/perspective.so" ..
+2013-07-26 18:18:01 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (5120 primitives) ..
+2013-07-26 18:18:01 INFO  ren0 [KDTreeBase] Finished -- took 40 ms.
+2013-07-26 18:18:01 INFO  ren0 [SamplingIntegrator] Starting render job (200x160, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 18:18:05 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/portable-scenes/Mitsuba/materialSphereMetal.exr" ..
+-------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/bump.so [Smooth dielectric coating]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/scale.so [Scaling texture]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 1.787 M
+    -  Shadow rays traced : 1.602 M
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 0.00 % (0.00 of 8.89 M)
+------------------------------------------------------------
+2013-07-26 18:18:05 INFO  ren0 [RenderQueue] Render time: 3.5360s
+2013-07-26 18:18:05 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/bump.so [Smooth dielectric coating]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/scale.so [Scaling texture]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 1.713 M
+    -  Shadow rays traced : 1.602 M
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 0.00 % (0.00 of 8.89 M)
+------------------------------------------------------------
+2013-07-26 18:18:05 INFO  ren0 [RenderQueue] Render time: 3.8830s
+2013-07-26 18:18:05 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/bitmap.so [Bitmap texture]
+    -  plugins/bump.so [Smooth dielectric coating]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/lanczos.so [Lanczos Sinc filter]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughconductor.so [Rough conductor BRDF]
+    -  plugins/scale.so [Scaling texture]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 1.543 M
+    -  Shadow rays traced : 1.602 M
+
+  * Texture system :
+    -  Cumulative MIP map memory allocations : 3.829 MiB
+    -  Filtered texture lookups : 0.00 % (0.00 of 8.89 M)
+------------------------------------------------------------

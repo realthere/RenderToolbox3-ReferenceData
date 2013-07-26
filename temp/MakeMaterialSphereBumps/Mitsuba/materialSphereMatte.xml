@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+   <bsdf id="Material-material-inner" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" name="reflectance"/>
+   </bsdf>
+   <texture id="earthTexture" type="bitmap">
+      <float name="gamma" value="1"/>
+      <float name="maxAnisotropy" value="20"/>
+      <float name="uoffset" value="0.0"/>
+      <float name="uscale" value="1.0"/>
+      <float name="voffset" value="0.0"/>
+      <float name="vscale" value="1.0"/>
+      <string name="filename" value="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/CubanSphere/earthbump1k-stretch-rgb.exr"/>
+      <string name="filterType" value="ewa"/>
+      <string name="wrapMode" value="repeat"/>
+   </texture>
+   <texture id="earthBumpMap-scaled" type="scale">
+      <float name="scale" value="0.1"/>
+      <ref id="earthTexture" name="value"/>
+   </texture>
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="Material-material" type="bump">
+      <ref id="Material-material-inner" name="bsdf"/>
+      <ref id="earthBumpMap-scaled" name="texture"/>
+   </bsdf>
+
+	
+   <emitter id="Point-light" type="point">
+		
+      <rgb name="intensity" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="0" y="5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <shape id="Icosphere-mesh_0" type="serialized">
+		
+      <string name="filename" value="materialSphereMatteUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <ref id="Material-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="40.1764"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-1 0 0 0 0 1 0 0 0 0 -1 5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="200"/>
+			
+         <integer name="height" value="160"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

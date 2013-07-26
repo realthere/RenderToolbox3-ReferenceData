@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Material id="Center-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0 800:0</parameter>
+   </Material>
+   <Material id="Checkerboard-material" type="matte">
+      <parameter name="Kd" type="texture">checks</parameter>
+   </Material>
+   <Texture id="checks" type="checkerboard">
+      <parameter name="tex2" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-3.spd</parameter>
+      <parameter name="tex1" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd</parameter>
+      <parameter name="udelta" type="float">0</parameter>
+      <parameter name="vdelta" type="float">0</parameter>
+      <parameter name="uscale" type="float">21</parameter>
+      <parameter name="vscale" type="float">13</parameter>
+      <parameter name="dataType" type="string">spectrum</parameter>
+      <parameter name="mapping" type="string">uv</parameter>
+      <parameter name="dimension" type="integer">2</parameter>
+   </Texture>
+   <merge id="Sun-light" type="distant">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </merge>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">7.5</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+</pbrt_xml>

@@ -1,0 +1,37 @@
+2013-07-26 17:22:43 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:22:43 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCoordinatesTest/Mitsuba/CoordinatesTest-001.xml" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 0 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 1 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 2 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 3 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 4 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [SerializedMesh] Loading shape 5 from "CoordinatesTest-001Unadjusted.serialized" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 17:22:43 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 17:22:43 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (276 primitives) ..
+2013-07-26 17:22:43 INFO  ren0 [KDTreeBase] Finished -- took 1 ms.
+2013-07-26 17:22:43 INFO  ren0 [SamplingIntegrator] Starting render job (320x240, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 17:22:44 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCoordinatesTest/Mitsuba/CoordinatesTest-001.exr" ..
+2013-07-26 17:22:44 INFO  ren0 [RenderQueue] Render time: 0.6190s
+2013-07-26 17:22:44 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 1.092 M
+    -  Shadow rays traced : 477.472 K
+------------------------------------------------------------

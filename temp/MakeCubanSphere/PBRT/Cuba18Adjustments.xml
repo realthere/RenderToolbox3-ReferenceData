@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Material id="SphereMaterial-material" type="plastic">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd</parameter>
+      <parameter name="Ks" type="spectrum">300:0.75</parameter>
+      <parameter name="roughness" type="float">0.003</parameter>
+   </Material>
+   <Material id="CubeMaterial-material" type="plastic">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd</parameter>
+      <parameter name="Ks" type="spectrum">300:0.75</parameter>
+      <parameter name="roughness" type="float">0.003</parameter>
+   </Material>
+   <merge id="Sun2-light" type="distant">
+      <parameter name="L" type="spectrum">400:1 700:10</parameter>
+   </merge>
+   <merge id="Sun1-light" type="distant">
+      <parameter name="L" type="spectrum">400:10 700:1</parameter>
+   </merge>
+   <merge id="RearLamp-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </merge>
+   <merge id="TopLamp-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </merge>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+</pbrt_xml>

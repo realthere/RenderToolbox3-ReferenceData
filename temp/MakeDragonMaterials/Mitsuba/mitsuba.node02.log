@@ -1,0 +1,65 @@
+2013-07-26 17:36:17 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:36:17 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonMaterials/Mitsuba/metalDragon.xml" ..
+2013-07-26 17:36:17 INFO  main [PluginManager] Loading plugin "plugins/direct.so" .2013-07-26 17:36:18 WARN  main [scenehandler.cpp:761] Near file offset 223: Unqueried attribute "shadingSamples" in element "integrator"
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/dielectric.so" ..
+2013-07-26 17:36:18 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 0 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 1 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 2 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 3 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 4 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 5 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [SerializedMesh] Loading shape 6 from "glassDragonUnadjusted.serialized" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 17:36:18 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 17:36:18 INFO  ren02013-07-26 17:36:18 INFO  ren0 [KDTreeBase] Finished -- took 7242013-07-26 17:36:20 INFO  ren0 [KDTreeBase] Finished -- took 2780 ms.
+2013-07-26 17:36:20 INFO  ren0 [BDPTIntegrator] Starti2013-07-26 17:36:27 INFO  ren0 [HDRFilm] Writing image to "/hom2013-07-26 17:36:35 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:36:43 WARN  wrk0 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:36:45 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:36:53 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:36:54 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:36:57 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:01 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:07 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:13 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:16 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:30 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:30 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:35 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:35 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:36 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:41 WARN  wrk3 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:41 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:44 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:49 WARN  wrk0 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:49 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:51 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:37:54 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:38:04 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:38:08 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:38:15 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:38:19 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-07-26 17:38:35 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonMaterials/Mitsuba/glassDragon.exr" ..
+2013-07-26 17:38:35 INFO  ren0 [RenderQueue] Render time: 2.2846m
+2013-07-26 17:38:35 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/bdpt.so [Bidirectional path tracer]
+    -  plugins/dielectric.so [Smooth dielectric BSDF]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 229.827 M
+------------------------------------------------------------

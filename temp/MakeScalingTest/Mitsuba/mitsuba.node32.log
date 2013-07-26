@@ -1,0 +1,53 @@
+2013-07-26 18:18:51 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 18:18:51 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeScalingTest/Mitsuba/2xFilter.xml" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 18:18:51 INFO  main [spectrum.cpp:585] "mccBabel-7.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 18:18:51 INFO  main [SerializedMesh] Loading shape 0 from "2xFilterUnadjusted.serialized" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 18:18:51 INFO  main [PluginManager] Loading plugin "plugins/thinlens.so" ..
+2013-07-26 18:18:51 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (5120 primitives) ..
+2013-07-26 18:18:51 INFO  ren0 [KDTreeBase] Finished -- took 59 ms.
+2013-07-26 18:18:51 INFO  ren0 [PluginManager] Loading plugin "plugins/disk.so" ..
+2013-07-26 18:18:51 INFO  ren0 [SamplingIntegrator] Starting render job (200x200, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 18:18:52 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeScalingTest/Mitsuba/4xPixels.exr" ..
+2013-07-26 18:18:52 INFO  ren0 [RenderQueue] Render time: 0.5950s
+2013-07-26 18:18:52 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/disk.so [Disk intersection primitive]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/thinlens.so [Perspective thin lens camera]
+
+  * General :
+    -  Normal rays traced : 480.512 K
+    -  Shadow rays traced : 400.512 K
+------------------------------------------------------------
+2013-07-26 18:18:52 INFO  ren0 [RenderQueue] Render time: 0.8240s
+2013-07-26 18:18:52 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/disk.so [Disk intersection primitive]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/thinlens.so [Perspective thin lens camera]
+
+  * General :
+    -  Normal rays traced : 1.922 M
+    -  Shadow rays traced : 1.602 M
+------------------------------------------------------------

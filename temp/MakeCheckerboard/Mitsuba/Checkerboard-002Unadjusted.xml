@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="Center-material" type="diffuse">
+		<rgb name="reflectance" value="0 0 0"/>
+	</bsdf>
+
+	<bsdf id="Checkerboard-material" type="diffuse">
+		<rgb name="reflectance" value="0.64 0.64 0.64"/>
+	</bsdf>
+
+	<shape id="Center-mesh_0" type="serialized">
+		<string name="filename" value="Checkerboard-002Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<transform name="toWorld">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0.05 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Center-material"/>
+	</shape>
+
+	<emitter id="Sun-light" type="directional">
+		<rgb name="irradiance" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<lookat origin="0, 0, 20" target="0, 0, 19"/>
+		</transform>
+
+	</emitter>
+
+	<shape id="Checkerboard-mesh_0" type="serialized">
+		<string name="filename" value="Checkerboard-002Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="1"/>
+		<transform name="toWorld">
+			<matrix value="21 0 0 0 0 13 0 0 0 0 1 0 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Checkerboard-material"/>
+	</shape>
+
+	<sensor id="Camera-camera" type="perspective">
+		<float name="fov" value="38.5526"/>
+		<float name="nearClip" value="0.1"/>
+		<float name="farClip" value="100"/>
+		<string name="fovAxis" value="smaller"/>
+
+		<transform name="toWorld">
+			<matrix value="-1 0 0 3.2 0 1 0 0 0 0 -1 76.4 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="640"/>
+			<integer name="height" value="480"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+</scene>

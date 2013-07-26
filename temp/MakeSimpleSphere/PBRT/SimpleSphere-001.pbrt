@@ -1,0 +1,81 @@
+# Film
+Film "image" 
+  "integer xresolution" [201] 
+  "integer yresolution" [201] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [4] 
+  "float xwidth" [1] 
+  "float ywidth" [1] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate 0 1 0 0
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate 0 0 -1000
+# Camera-camera
+Camera "orthographic" 
+  "float screenwindow" [-100.500000 100.500000 -100.500000 100.500000] 
+
+WorldBegin
+
+# material Material-material
+MakeNamedMaterial "Material-material" 
+  "string type" "anisoward" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd" 
+  "spectrum Ks" [300 0.07 800 0.07] 
+  "float alphaU" [0.05] 
+  "float alphaV" [0.05] 
+
+ObjectBegin "Icosphere_001-mesh"
+# object Icosphere_001-mesh
+NamedMaterial "Material-material"
+NamedMaterial "Material-material"
+Include "mesh-data-Icosphere_001-mesh_0.pbrt"
+
+ObjectEnd
+
+# Icosphere
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Lamp
+AttributeBegin
+TransformBegin Translate 1000 1000 1000
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Lamp-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

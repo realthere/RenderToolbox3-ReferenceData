@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="Material-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <emitter id="Point-light" type="point">
+		
+      <rgb name="intensity" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="0" y="5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <shape id="Icosphere-mesh_0" type="serialized">
+		
+      <string name="filename" value="2xFilterUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <ref id="Material-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="thinlens">
+		
+      <float name="fov" value="49.1343"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-1 0 0 0 0 1 0 0 0 0 -1 5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="100"/>
+			
+         <integer name="height" value="100"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="1"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+      <float name="apertureRadius" value="0.1"/>
+      <float name="focusDistance" value="5"/>
+      <float name="shutterClose" value="1"/>
+      <float name="shutterOpen" value="0"/>
+   </sensor>
+
+
+</scene>

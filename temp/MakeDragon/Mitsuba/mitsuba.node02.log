@@ -1,0 +1,41 @@
+2013-07-26 17:28:21 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-07-26 17:28:21 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragon/Mitsuba/Dragon-001.xml" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-07-26 17:28:21 INFO  main [spectrum.cpp:585] "mccBabel-1.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-07-26 17:28:21 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 0 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 1 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 2 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 3 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 4 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 5 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [SerializedMesh] Loading shape 6 from "Dragon-001Unadjusted.serialized" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-07-26 17:28:21 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-07-26 17:28:21 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (100042 primitives) ..
+2013-07-26 17:28:22 INFO  ren0 [KDTreeBase] Finished -- took 655 ms.
+2013-07-26 17:28:22 INFO  ren0 [SamplingIntegrator] Starting render job (320x240, 8 samples, 8 cores, SSE2 enabled) ..
+2013-07-26 17:28:28 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragon/Mitsuba/Dragon-001.exr" ..
+2013-07-26 17:28:28 INFO  ren0 [RenderQueue] Render time: 6.9490s
+2013-07-26 17:28:28 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 20.270 M
+    -  Shadow rays traced : 18.862 M
+------------------------------------------------------------
