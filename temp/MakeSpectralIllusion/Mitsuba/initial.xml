@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="path">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="Material_001-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_024-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-1.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_002-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-3.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_003-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_004-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_005-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-6.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_006-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_007-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_008-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_009-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-10.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_010-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_011-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_012-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-13.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_013-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-14.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_014-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-15.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_015-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_016-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-17.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_017-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_018-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_019-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_020-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-21.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_021-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-22.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_022-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-23.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Material_023-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-24.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Top-material" type="diffuse">
+      <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/SpectralIllusionTarget.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="Side-material" type="diffuse">
+      <boolean name="ensureEnergyConservation" value="false"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="SkyNoReflect-material" type="diffuse">
+      <spectrum name="reflectance" value="300:0 800:0"/>
+   </bsdf>
+
+	
+   <bsdf id="Floor-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <shape id="Cube_028-mesh_0" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_001-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_1" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="1"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_002-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_2" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="2"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_003-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_3" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="3"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_004-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_4" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="4"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_005-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_5" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="5"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_006-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_6" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="6"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_007-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_7" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="7"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_008-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_8" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="8"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_009-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_9" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="9"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_010-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_10" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="10"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_011-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_11" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="11"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_012-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_12" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="12"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_013-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_13" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="13"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_014-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_14" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="14"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_015-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_15" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="15"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_016-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_16" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="16"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_017-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_17" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="17"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_018-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_18" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="18"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_019-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_19" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="19"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_020-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_20" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="20"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_021-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_21" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="21"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_022-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_22" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="22"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Material_023-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_23" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="23"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Top-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_028-mesh_24" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="24"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 1.06 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Side-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Sky-mesh_0" type="serialized">
+      <emitter id="Sky-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/CIE-daylight-10000.spd" name="radiance"/>
+      </emitter>
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="25"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="200 0 0 0 0 -200 1.75635e-06 0 0 -0.000351271 -1 20 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="SkyNoReflect-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="Sun-light" type="point">
+		
+      <rgb name="intensity" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="5" y="-10" z="19"/>
+		
+      </transform>
+	
+      <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/CIE-daylight-4000.spd" name="intensity"/>
+   </emitter>
+
+	
+   <shape id="Plane_001-mesh_0" type="serialized">
+		
+      <string name="filename" value="initialUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="26"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="15 0 0 0 0 15 0 0 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="Floor-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="37.8493"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.866026 -0.286787 -0.409575 3 -0.499998 -0.496732 -0.709407 5 0 0.819152 -0.573576 5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="64"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="640"/>
+			
+         <integer name="height" value="480"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

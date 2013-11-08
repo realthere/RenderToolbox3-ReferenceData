@@ -1,0 +1,138 @@
+2013-11-01 18:29:31 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 18:29:31 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInteriorDragon/Mitsuba/interio-dragon-001.xml" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-18.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-20.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/path.so" ..
+2013-11-01 18:29:31 WARN  main [scenehandler.cpp:761] Near file offset 755: Unqueried attribute "shadingSamples" in element "integrator"
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-6.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-9.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-21.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-2.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-5.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-4.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-14.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-8.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-9.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-10.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-13.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-17.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-16.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-11.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-15.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-22.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-12.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-7.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-19.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "mccBabel-6.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 0 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "WindowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 1 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "WindowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 2 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 3 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 4 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 5 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 6 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 7 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 8 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/shapegroup.so" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/instance.so" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 9 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 10 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 11 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 12 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/spot.so" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "YellowLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 13 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [spectrum.cpp:585] "HangingLight.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:29:31 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 14 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 15 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 16 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 17 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 18 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 19 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (12 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 20 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 21 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 22 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 23 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (48 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 24 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 25 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 26 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 27 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 28 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (320 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 4 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 29 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 30 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (320 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 3 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 31 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (320 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 3 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 32 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 33 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 34 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 35 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Constructing a SAH kd-tree (28 primitives) ..
+2013-11-01 18:29:31 INFO  main [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 36 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 37 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 38 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 39 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 40 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 41 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 42 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 43 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 44 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 45 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [SerializedMesh] Loading shape 46 from "interio-dragon-001Unadjusted.serialized" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 18:29:31 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-11-01 18:29:31 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (269043 primitives) ..
+2013-11-01 18:29:32 INFO  ren0 [KDTreeBase] Finished -- took 834 ms.
+2013-11-01 18:29:32 INFO  ren0 [SamplingIntegrator] Starting render job (640x480, 1024 samples, 8 cores, SSE2 enabled) ..
+2013-11-01 18:39:12 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInteriorDragon/Mitsuba/interio-dragon-001.exr" ..
+2013-11-01 18:39:12 INFO  ren0 [RenderQueue] Render time: 9.6762m
+2013-11-01 18:39:12 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/instance.so [Instanced geometry]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/path.so [MI path tracer]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/shapegroup.so [Grouped geometry for instancing]
+    -  plugins/spot.so [Spot light]
+
+  * General :
+    -  Normal rays traced : 1.714 G
+    -  Shadow rays traced : 1.329 G
+
+  * Path tracer :
+    -  Average path length : 5.19 (1.63 G / 314.57 M)
+------------------------------------------------------------

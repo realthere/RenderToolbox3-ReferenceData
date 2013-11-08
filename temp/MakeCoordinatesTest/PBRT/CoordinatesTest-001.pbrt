@@ -1,0 +1,325 @@
+# Film
+Film "image" 
+  "integer xresolution" [320] 
+  "integer yresolution" [240] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate 10 1 0 0
+Rotate -10 0 1 0
+Rotate -40.000020 0.000000 0.000000 1.000000
+Translate -2 -2 -25
+# Camera-camera
+Camera "perspective" 
+  "float fov" [61.927516] 
+
+WorldBegin
+
+# material XRed-material
+MakeNamedMaterial "XRed-material" 
+  "string type" "uber" 
+  "rgb Kd" [0.640000 0.020819 0.094347] 
+  "float index" [1.0] 
+
+# material YGreen-material
+MakeNamedMaterial "YGreen-material" 
+  "string type" "uber" 
+  "rgb Kd" [0.175277 0.640000 0.112242] 
+  "float index" [1.0] 
+
+# material ZBlue-material
+MakeNamedMaterial "ZBlue-material" 
+  "string type" "uber" 
+  "rgb Kd" [0.089404 0.063700 0.640000] 
+  "float index" [1.0] 
+
+ObjectBegin "Cube_003-mesh"
+# object Cube_003-mesh
+NamedMaterial "XRed-material"
+Include "mesh-data-Cube_003-mesh_0.pbrt"
+NamedMaterial "XRed-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_004-mesh"
+# object Cube_004-mesh
+NamedMaterial "YGreen-material"
+Include "mesh-data-Cube_004-mesh_0.pbrt"
+NamedMaterial "YGreen-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_005-mesh"
+# object Cube_005-mesh
+NamedMaterial "ZBlue-material"
+Include "mesh-data-Cube_005-mesh_0.pbrt"
+NamedMaterial "ZBlue-material"
+
+ObjectEnd
+
+ObjectBegin "Icosphere_002-mesh"
+# object Icosphere_002-mesh
+NamedMaterial "XRed-material"
+Include "mesh-data-Icosphere_002-mesh_0.pbrt"
+NamedMaterial "XRed-material"
+
+ObjectEnd
+
+ObjectBegin "Icosphere_003-mesh"
+# object Icosphere_003-mesh
+NamedMaterial "YGreen-material"
+Include "mesh-data-Icosphere_003-mesh_0.pbrt"
+NamedMaterial "YGreen-material"
+
+ObjectEnd
+
+ObjectBegin "Icosphere_004-mesh"
+# object Icosphere_004-mesh
+NamedMaterial "ZBlue-material"
+Include "mesh-data-Icosphere_004-mesh_0.pbrt"
+NamedMaterial "ZBlue-material"
+
+ObjectEnd
+
+# Point
+AttributeBegin
+TransformBegin Translate -5 5 5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_001
+AttributeBegin
+TransformBegin Translate 5 5 5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_001-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_002
+AttributeBegin
+TransformBegin Translate -5 -5 5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_002-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_003
+AttributeBegin
+TransformBegin Translate 5 -5 5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_003-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_004
+AttributeBegin
+TransformBegin Translate 5 -5 -5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_004-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_005
+AttributeBegin
+TransformBegin Translate -5 -5 -5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_005-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_006
+AttributeBegin
+TransformBegin Translate -5 5 -5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_006-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point_007
+AttributeBegin
+TransformBegin Translate 5 5 -5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point_007-light
+LightSource "point" 
+  "rgb I" [10 10 10] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# XMinCube
+AttributeBegin
+TransformBegin Translate -10 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# XPlusSphere
+AttributeBegin
+TransformBegin Translate 10 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# YMinCube
+AttributeBegin
+TransformBegin Translate 0 -10 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# YPlusSphere
+AttributeBegin
+TransformBegin Translate 0 10 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# ZMinCube
+AttributeBegin
+TransformBegin Translate 0 0 -10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Cube_005-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# ZPlusSphere
+AttributeBegin
+TransformBegin Translate 0 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

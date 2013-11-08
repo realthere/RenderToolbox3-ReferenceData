@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="SphereMaterial-material" type="roughplastic">
+      <float name="alpha" value="0.1"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="diffuseReflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="CubeMaterial-material" type="roughplastic">
+      <float name="alpha" value="0.1"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="diffuseReflectance"/>
+   </bsdf>
+
+	
+   <emitter id="Sun2-light" type="directional">
+		
+      <rgb name="irradiance" value="0.1 0.0952859 0.0811438"/>
+
+		
+      <transform name="toWorld">
+			
+         <lookat origin="0.610626, 13.1533, 1.74115" target="0.840604, 12.1805, 1.76685"/>
+		
+      </transform>
+
+	
+      <spectrum name="irradiance" value="400:1 700:10"/>
+   </emitter>
+
+	
+   <emitter id="Sun1-light" type="directional">
+		
+      <rgb name="irradiance" value="0.1 0.0952859 0.0811438"/>
+
+		
+      <transform name="toWorld">
+			
+         <lookat origin="-2.73092, -11.8185, -6.45171" target="-2.21907, -11.2039, -5.85149"/>
+		
+      </transform>
+
+	
+      <spectrum name="irradiance" value="400:10 700:1"/>
+   </emitter>
+
+	
+   <shape id="Sphere-mesh_0" type="serialized">
+		
+      <string name="filename" value="Cuba31Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 5.032 0 1 0 -1.42286 0 0 1 0.472888 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="SphereMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="RearLamp-light" type="point">
+		
+      <rgb name="intensity" value="10 1.04183 1.67904"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="22.7714" y="-17.4765" z="0.344669"/>
+		
+      </transform>
+	
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" name="intensity"/>
+   </emitter>
+
+	
+   <shape id="Cube-mesh_0" type="serialized">
+		
+      <string name="filename" value="Cuba31Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="1"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.965926 0.224144 -0.129409 1.55888 -0.258819 0.836516 -0.482963 -4.22533 -1.74533e-07 0.5 0.866025 1.36323 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="CubeMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="TopLamp-light" type="point">
+		
+      <rgb name="intensity" value="1.2 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-1.49002" y="-5.01124" z="4.64047"/>
+		
+      </transform>
+	
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/DimFlat.spd" name="intensity"/>
+   </emitter>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="40.1764"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.5 0.150384 0.852869 -12.99 0.866025 -0.0868241 -0.492404 7.5 0 0.984808 -0.173648 3 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="200"/>
+			
+         <integer name="height" value="160"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

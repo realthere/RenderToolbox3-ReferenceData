@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="ZBlue-material" type="diffuse">
+		
+      <rgb name="reflectance" value="0.0894036 0.0636998 0.64"/>
+	
+   </bsdf>
+
+	
+   <bsdf id="YGreen-material" type="diffuse">
+		
+      <rgb name="reflectance" value="0.175277 0.64 0.112242"/>
+	
+   </bsdf>
+
+	
+   <bsdf id="XRed-material" type="diffuse">
+		
+      <rgb name="reflectance" value="0.64 0.0208186 0.0943468"/>
+	
+   </bsdf>
+
+	
+   <shape id="Cube_005-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 -10 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="ZBlue-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_004-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="1"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 -10 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="YGreen-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_003-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="2"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 -10 0 1 0 0 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="XRed-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Icosphere_004-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="3"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 1 10 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="ZBlue-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Icosphere_003-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="4"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 10 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="YGreen-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Icosphere_002-mesh_0" type="serialized">
+		
+      <string name="filename" value="CoordinatesTest-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="5"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 10 0 1 0 0 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="XRed-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="Point_007-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="5" y="5" z="-5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_006-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-5" y="5" z="-5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_005-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-5" y="-5" z="-5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_004-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="5" y="-5" z="-5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_003-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="5" y="-5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_002-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-5" y="-5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point_001-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="5" y="5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <emitter id="Point-light" type="point">
+		
+      <rgb name="intensity" value="10 10 10"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-5" y="5" z="5"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="61.9275"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-0.754406 -0.656122 -0.0193823 2 -0.633022 0.735024 -0.242945 2 0.173648 -0.17101 -0.969846 25 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="320"/>
+			
+         <integer name="height" value="240"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

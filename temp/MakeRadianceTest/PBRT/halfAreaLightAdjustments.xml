@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <merge id="AreaLight-mesh">
+      <reference name="area-light" type="AreaLightSource">AreaLight-mesh-area-light</reference>
+   </merge>
+   <AreaLightSource id="AreaLight-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeRadianceTest/uniformSpectrum5nm.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <merge id="Point-light" type="point">
+      <parameter name="I" type="spectrum">300:0 800:0</parameter>
+   </merge>
+   <Material id="AreaLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0 800:0</parameter>
+   </Material>
+   <Material id="Material-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">100</parameter>
+      <parameter name="yresolution" type="integer">100</parameter>
+   </Film>
+</pbrt_xml>

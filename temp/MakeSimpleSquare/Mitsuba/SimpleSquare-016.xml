@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="SquareMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <emitter id="Sun-light" type="directional">
+		
+      <rgb name="irradiance" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <lookat origin="0, 0, 10" target="0, 0, 9"/>
+		
+      </transform>
+
+	
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" name="irradiance"/>
+   </emitter>
+
+	
+   <shape id="Plane-mesh_0" type="serialized">
+		
+      <string name="filename" value="SimpleSquare-016Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <ref id="SquareMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="49.1343"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 0 0 1 0 0 0 0 -1 2.5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="50"/>
+			
+         <integer name="height" value="50"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

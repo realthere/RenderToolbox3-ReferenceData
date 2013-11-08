@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="path">
+      <integer name="maxDepth" value="10"/>
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="WhiteMaterial-material" type="diffuse">
+      <spectrum name="reflectance" value="300:1 800:1"/>
+   </bsdf>
+
+	
+   <bsdf id="BlueMaterial-material" type="diffuse">
+      <spectrum name="reflectance" value="300:1 500:1 600:0 800:0"/>
+   </bsdf>
+
+	
+   <emitter id="Point-light" type="point">
+		
+      <rgb name="intensity" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="0" y="1" z="3"/>
+		
+      </transform>
+	
+   </emitter>
+
+	
+   <shape id="WhitePanelMesh-mesh_0" type="serialized">
+		
+      <string name="filename" value="convexUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.707107 0 0.707107 0.707 0 1 0 0 -0.707107 0 0.707107 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="WhiteMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="RedPanelMesh-mesh_0" type="serialized">
+		
+      <string name="filename" value="convexUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="1"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.707107 0 -0.707107 -0.707 0 1 0 0 0.707107 0 0.707107 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="BlueMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="31.8908"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-1 0 0 0 0 1 0 0 0 0 -1 5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="64"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="160"/>
+			
+         <integer name="height" value="100"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

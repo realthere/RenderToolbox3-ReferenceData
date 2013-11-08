@@ -1,0 +1,68 @@
+2013-11-01 18:01:43 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 18:01:43 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonMaterials/Mitsuba/metalDragon.xml" ..
+2013-11-01 18:01:43 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-11-01 18:01:43 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "Rh.eta.spd": loaded a spectral power distribution with 27 entries (between 302.389984 and 885.570984 nm)
+2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "Rh.k.spd": loaded2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:01:43 INFO  2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "Cu.eta.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "Cu.k.spd": loaded a spectral power distribution with 55 entries (between 302.400421 and 885.601257 nm)
+2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:01:43 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-11-01 18:01:43 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 0 from "metalDragonUnadjusted.serialized" ..
+2013-11-01 18:01:43 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 1 from "metalDragonUnadjusted.serialized" ..
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 2 from "metalDragonUnadjusted.serialized" ..
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 3 from "metalDragonUnadjusted.serialized" ..
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 4 from "metalDragonUnadjusted.serialized" ..
+2013-11-01 18:01:43 INFO  main [SerializedMesh] Loading shape 5 from "metalDragonUnadjusted.serialized" ..2013-11-01 18:01:43 INFO  ren0 [KDTreeBase] Finished -- took 7082013-11-01 18:01:46 INFO  ren0 [KDTreeBase] Finished -- took 3281 ms.
+2013-11-01 18:01:46 INFO  ren0 [BDPTIntegrator] Starti2013-11-01 18:01:51 INFO  ren0 [HDRFilm] Writing image to "/hom2013-11-01 18:01:57 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:08 WARN  wrk0 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:10 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:17 WARN  wrk3 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:18 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:19 WARN  wrk1 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:19 WARN  wrk1 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:22 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:26 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:38 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:39 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:45 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:51 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:02:59 WARN  wrk6 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:00 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:01 WARN  wrk3 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:04 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:05 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:11 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:12 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:13 WARN  wrk0 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:13 WARN  wrk4 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:13 WARN  wrk7 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:17 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:22 WARN  wrk5 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:25 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:28 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:32 WARN  wrk1 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:32 WARN  wrk2 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:41 WARN  wrk1 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:41 WARN  wrk1 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:41 WARN  wrk0 [ImageBlock] Invalid sample value : [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, 1, 1]
+2013-11-01 18:03:47 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeDragonMaterials/Mitsuba/glassDragon.exr" ..
+2013-11-01 18:03:47 INFO  ren0 [RenderQueue] Render time: 2.0673m
+2013-11-01 18:03:47 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/bdpt.so [Bidirectional path tracer]
+    -  plugins/dielectric.so [Smooth dielectric BSDF]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 229.843 M
+------------------------------------------------------------

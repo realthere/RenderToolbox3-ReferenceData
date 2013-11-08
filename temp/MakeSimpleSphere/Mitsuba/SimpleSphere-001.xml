@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="direct">
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="Material-material" type="ward">
+      <float name="alphaU" value="0.05"/>
+      <float name="alphaV" value="0.05"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd" name="diffuseReflectance"/>
+      <spectrum name="specularReflectance" value="300:0.07 800:0.07"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+
+	
+   <shape id="Icosphere_001-mesh_0" type="serialized">
+		
+      <string name="filename" value="SimpleSphere-001Unadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <ref id="Material-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="Lamp-light" type="point">
+		
+      <rgb name="intensity" value="1 1 1"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="1000" y="1000" z="1000"/>
+		
+      </transform>
+	
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" name="intensity"/>
+   </emitter>
+
+	
+   <sensor id="Camera-camera" type="orthographic">
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-1 0 0 0 0 1 0 0 0 0 -1 1000 0 0 0 1"/>
+		
+         <scale x="100.500000" y="100.500000"/>
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="8"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="201"/>
+			
+         <integer name="height" value="201"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.25"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

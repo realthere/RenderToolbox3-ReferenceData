@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Texture id="zzz-earthBumpMap-scaled" type="scale">
+      <parameter name="dataType" type="string">float</parameter>
+      <parameter name="tex1" type="texture">earthTexture</parameter>
+      <parameter name="tex2" type="float">0.1</parameter>
+   </Texture>
+   <Texture id="earthTexture" type="imagemap">
+      <parameter name="filename" type="string">earthbump1k-stretch-rgb.exr</parameter>
+      <parameter name="wrap" type="string">repeat</parameter>
+      <parameter name="gamma" type="float">1</parameter>
+      <parameter name="trilinear" type="bool">false</parameter>
+      <parameter name="maxanisotropy" type="float">20</parameter>
+      <parameter name="udelta" type="float">0.0</parameter>
+      <parameter name="vdelta" type="float">0.0</parameter>
+      <parameter name="uscale" type="float">1.0</parameter>
+      <parameter name="vscale" type="float">1.0</parameter>
+      <parameter name="dataType" type="string">float</parameter>
+   </Texture>
+   <Material id="Material-material" type="anisoward">
+      <parameter name="alphaU" type="float">0.2</parameter>
+      <parameter name="alphaV" type="float">0.2</parameter>
+      <parameter name="Kd" type="spectrum">mccBabel-7.spd</parameter>
+      <parameter name="Ks" type="spectrum">300:0.5 800:0.5</parameter>
+      <parameter name="bumpmap" type="texture">zzz-earthBumpMap-scaled</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">200</parameter>
+      <parameter name="yresolution" type="integer">160</parameter>
+   </Film>
+</pbrt_xml>

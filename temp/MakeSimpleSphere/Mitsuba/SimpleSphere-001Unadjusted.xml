@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="Material-material" type="diffuse">
+		<rgb name="reflectance" value="0.64 0.64 0.64"/>
+	</bsdf>
+
+	<shape id="Icosphere_001-mesh_0" type="serialized">
+		<string name="filename" value="SimpleSphere-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<ref name="bsdf" id="Material-material"/>
+	</shape>
+
+	<emitter id="Lamp-light" type="point">
+		<rgb name="intensity" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<translate x="1000" y="1000" z="1000"/>
+		</transform>
+	</emitter>
+
+	<sensor id="Camera-camera" type="orthographic">
+
+		<transform name="toWorld">
+			<matrix value="-1 0 0 0 0 1 0 0 0 0 -1 1000 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="201"/>
+			<integer name="height" value="201"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+</scene>

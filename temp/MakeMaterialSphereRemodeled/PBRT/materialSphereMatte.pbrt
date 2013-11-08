@@ -1,0 +1,78 @@
+# Film
+Film "image" 
+  "integer xresolution" [200] 
+  "integer yresolution" [160] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate 0 1 0 0
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate 0 0 -5
+# Camera-camera
+Camera "perspective" 
+  "float fov" [40.176374] 
+
+WorldBegin
+
+# material Material-material
+MakeNamedMaterial "Material-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" 
+
+ObjectBegin "Icosphere-mesh"
+# object Icosphere-mesh
+NamedMaterial "Material-material"
+NamedMaterial "Material-material"
+Include "mesh-data-Icosphere-mesh_0.pbrt"
+
+ObjectEnd
+
+# Icosphere
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point
+AttributeBegin
+TransformBegin Translate 0 5 5
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point-light
+LightSource "point" 
+  "rgb I" [1 1 1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<scene version="0.4.1">
+   <merge id="LightAbove-light" type="point">
+      <spectrum name="intensity" value="300:100 800:10"/>
+   </merge>
+   <bsdf id="SphereMaterial-material" type="ward">
+      <spectrum name="diffuseReflectance" value="300:0.1 800:0.7"/>
+      <spectrum name="specularReflectance" value="300:0.3 800:0.3"/>
+      <float name="alphaU" value="0.1"/>
+      <float name="alphaV" value="0.1"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+   <bsdf id="FloorMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="WallMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="TableMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" name="reflectance"/>
+   </bsdf>
+
+    
+   <integrator id="integrator" type="path">
+        
+      <integer name="shadingSamples" value="32"/>
+    
+      <integer name="maxDepth" value="10"/>
+   </integrator>
+    
+    
+   <sampler id="Camera-camera_sampler" type="ldsampler">
+        
+      <integer name="sampleCount" value="128"/>
+    
+   </sampler>
+    
+    
+   <merge id="Camera-camera_film" type="hdrfilm">
+        
+      <string name="fileFormat" value="openexr"/>
+        
+      <string name="pixelFormat" value="spectrum"/>
+        
+      <string name="componentFormat" value="float16"/>
+        
+      <boolean name="banner" value="false"/>
+        
+        
+      <rfilter type="gaussian">
+            
+         <float name="stddev" value="0.5"/>
+        
+      </rfilter>
+    
+   </merge>
+    
+
+</scene>

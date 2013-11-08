@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<scene version="0.4.1">
+   <bsdf id="Material_024-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-1.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_023-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-24.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_022-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-23.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_021-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-22.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_020-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-21.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_019-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_018-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_017-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_016-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-17.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_015-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_014-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-15.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_013-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-14.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_012-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-13.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_011-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_010-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_009-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-10.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_008-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_007-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_006-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_005-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-6.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_004-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_003-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_002-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-3.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Material_001-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Side-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" name="reflectance"/>
+      <boolean name="ensureEnergyConservation" value="false"/>
+   </bsdf>
+   <bsdf id="Top-material" type="diffuse">
+      <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/SpectralIllusionTarget.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="Floor-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" name="reflectance"/>
+   </bsdf>
+   <bsdf id="SkyNoReflect-material" type="diffuse">
+      <spectrum name="reflectance" value="300:0 800:0"/>
+   </bsdf>
+   <merge id="Sky-mesh_0">
+      <emitter id="Sky-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/CIE-daylight-10000.spd" name="radiance"/>
+      </emitter>
+   </merge>
+   <merge id="Sun-light" type="point">
+      <spectrum filename="/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSpectralIllusion/CIE-daylight-4000.spd" name="intensity"/>
+   </merge>
+
+    
+   <integrator id="integrator" type="path">
+        
+      <integer name="shadingSamples" value="32"/>
+    
+   </integrator>
+    
+    
+   <sampler id="Camera-camera_sampler" type="ldsampler">
+        
+      <integer name="sampleCount" value="64"/>
+    
+   </sampler>
+    
+    
+   <merge id="Camera-camera_film" type="hdrfilm">
+        
+      <string name="fileFormat" value="openexr"/>
+        
+      <string name="pixelFormat" value="spectrum"/>
+        
+      <string name="componentFormat" value="float16"/>
+        
+      <boolean name="banner" value="false"/>
+        
+        
+      <rfilter type="gaussian">
+            
+         <float name="stddev" value="0.5"/>
+        
+      </rfilter>
+    
+   </merge>
+    
+
+</scene>

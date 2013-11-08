@@ -1,0 +1,119 @@
+# Film
+Film "image" 
+  "integer xresolution" [640] 
+  "integer yresolution" [480] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [7.5] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate 0 1 0 0
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate -3.200000 -0.000000 -76.400000
+# Camera-camera
+Camera "perspective" 
+  "float fov" [38.552603] 
+
+WorldBegin
+
+# texture checks
+Texture "checks" "spectrum" "checkerboard" 
+  "integer dimension" [2] 
+  "string mapping" "uv" 
+  "spectrum tex1" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" 
+  "spectrum tex2" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-3.spd" 
+  "float udelta" [0] 
+  "float uscale" [21] 
+  "float vdelta" [0] 
+  "float vscale" [13] 
+
+# material Center-material
+MakeNamedMaterial "Center-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 0 800 0] 
+
+# material Checkerboard-material
+MakeNamedMaterial "Checkerboard-material" 
+  "string type" "matte" 
+  "texture Kd" "checks" 
+
+ObjectBegin "Center-mesh"
+# object Center-mesh
+NamedMaterial "Center-material"
+NamedMaterial "Center-material"
+Include "mesh-data-Center-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Checkerboard-mesh"
+# object Checkerboard-mesh
+NamedMaterial "Checkerboard-material"
+NamedMaterial "Checkerboard-material"
+Include "mesh-data-Checkerboard-mesh_0.pbrt"
+
+ObjectEnd
+
+# Center
+AttributeBegin
+TransformBegin Translate 0 0 0.05
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Center-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Checkerboard
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 21 13 1
+ObjectInstance "Checkerboard-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sun
+AttributeBegin
+TransformBegin Translate 0 0 20
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Sun-light
+LightSource "distant" 
+  "spectrum L" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

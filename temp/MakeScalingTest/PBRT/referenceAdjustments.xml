@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <Material id="Material-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+   <merge id="Camera-camera" type="perspective">
+      <parameter name="lensradius" type="float">0.1</parameter>
+      <parameter name="focaldistance" type="float">5</parameter>
+   </merge>
+   <merge id="Camera">
+      <transformation name="timing" type="TransformTimes">0 1</transformation>
+   </merge>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">100</parameter>
+      <parameter name="yresolution" type="integer">100</parameter>
+   </Film>
+</pbrt_xml>

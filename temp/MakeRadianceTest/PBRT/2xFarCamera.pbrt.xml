@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">100</parameter>
+      <parameter name="yresolution" type="integer">100</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <Attribute id="AreaLight" type="">
+      <transformation name="location" type="Translate">0.000000 0.000000 100.100000</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">180.000100 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">0.01 0.01 1</transformation>
+      <reference name="instance_geometry" type="Object">AreaLight-mesh</reference>
+      <reference name="instance_material" type="Material">AreaLight-material</reference>
+   </Attribute>
+   <Material id="AreaLight-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0 800:0</parameter>
+   </Material>
+   <Shape id="AreaLight-mesh" type="trianglemesh">
+      <reference name="material" type="Material">AreaLight-material</reference>
+      <reference name="AreaLight-mesh_0-material" type="Material">AreaLight-material</reference>
+      <reference name="AreaLight-mesh_0" type="Include">mesh-data-AreaLight-mesh_0.pbrt</reference>
+   </Shape>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">0 10 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">-45 1 0 0</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">49.134340</parameter>
+   </Camera>
+   <Material id="Material-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Shape id="Plane-mesh" type="trianglemesh">
+      <reference name="Plane-mesh_0-material" type="Material">Material-material</reference>
+      <reference name="Plane-mesh_0" type="Include">mesh-data-Plane-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">Material-material</reference>
+   </Shape>
+   <Attribute id="Point" type="">
+      <transformation name="location" type="Translate">0 0 100</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point-light</reference>
+   </Attribute>
+   <LightSource id="Point-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeRadianceTest/uniformSpectrum5nm.spd</parameter>
+   </LightSource>
+   <Attribute id="Reflector" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane-mesh</reference>
+      <reference name="instance_material" type="Material">Material-material</reference>
+   </Attribute>
+</pbrt_xml>

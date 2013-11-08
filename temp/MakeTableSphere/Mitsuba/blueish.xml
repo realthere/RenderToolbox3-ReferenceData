@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+	Automatically converted from COLLADA
+
+-->
+<scene version="0.4.4">
+	
+   <integrator id="integrator" type="path">
+      <integer name="maxDepth" value="10"/>
+      <integer name="shadingSamples" value="32"/>
+   </integrator>
+
+	
+   <bsdf id="WallMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="SphereMaterial-material" type="ward">
+      <float name="alphaU" value="0.1"/>
+      <float name="alphaV" value="0.1"/>
+      <spectrum name="diffuseReflectance" value="300:0.1 800:0.7"/>
+      <spectrum name="specularReflectance" value="300:0.3 800:0.3"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+
+	
+   <bsdf id="TableMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <bsdf id="FloorMaterial-material" type="diffuse">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" name="reflectance"/>
+   </bsdf>
+
+	
+   <shape id="Plane_004-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="0"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="-10 0 -1.75635e-06 0 0 10 0 0 1.75635e-05 0 -1 20 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="WallMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Plane_003-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="1"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="-6.39758e-06 0 -1 10 0 10 0 0 10 0 -6.39758e-07 10 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="WallMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Plane_002-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="2"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="-6.39758e-06 0 1 -10 0 10 0 0 -10 0 -6.39758e-07 10 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="WallMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <emitter id="LightAbove-light" type="point">
+		
+      <rgb name="intensity" value="5 5 5"/>
+
+		
+      <transform name="toWorld">
+			
+         <translate x="-1" y="1" z="10"/>
+		
+      </transform>
+	
+      <spectrum name="intensity" value="300:100 800:10"/>
+   </emitter>
+
+	
+   <shape id="Icosphere-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="3"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="1 0 0 -1 0 1 0 5 0 0 1 3.09 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="SphereMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cylinder_003-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="4"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.1 0 0 -2.75 0 0.1 0 3.75 0 0 1 1 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="TableMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cylinder_002-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="5"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.1 0 0 -2.75 0 0.1 0 6.25 0 0 1 1 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="TableMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cylinder_001-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="6"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.1 0 0 2.75 0 0.1 0 3.75 0 0 1 1 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="TableMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cylinder-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="7"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="0.1 0 0 2.75 0 0.1 0 6.25 0 0 1 1 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="TableMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Cube_001-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="8"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="3 0 0 0 0 1.5 0 5 0 0 0.1 2 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="TableMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Plane_001-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="9"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="10 0 0 0 0 -6.39758e-06 -1 10 0 10 -6.39758e-07 10 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="WallMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <shape id="Plane-mesh_0" type="serialized">
+		
+      <string name="filename" value="blueishUnadjusted.serialized"/>
+		
+      <integer name="shapeIndex" value="10"/>
+		
+      <transform name="toWorld">
+			
+         <matrix value="10 0 0 0 0 10 0 0 0 0 1 0 0 0 0 1"/>
+		
+      </transform>
+		
+      <ref id="FloorMaterial-material" name="bsdf"/>
+	
+   </shape>
+
+	
+   <sensor id="Camera-camera" type="perspective">
+		
+      <float name="fov" value="37.8493"/>
+		
+      <float name="nearClip" value="0.1"/>
+		
+      <float name="farClip" value="100"/>
+		
+      <string name="fovAxis" value="smaller"/>
+
+		
+      <transform name="toWorld">
+			
+         <matrix value="-1 0 0 -0.5 0 0.0871551 0.996195 -5 0 0.996195 -0.0871551 3.5 0 0 0 1"/>
+		
+      </transform>
+
+		
+      <sampler id="Camera-camera_sampler" type="ldsampler">
+         <integer name="sampleCount" value="128"/>
+      </sampler>
+
+		
+      <film id="Camera-camera_film" type="hdrfilm">
+			
+         <integer name="width" value="320"/>
+			
+         <integer name="height" value="240"/>
+			
+         <rfilter type="gaussian">
+            <float name="stddev" value="0.5"/>
+         </rfilter>
+		
+         <boolean name="banner" value="false"/>
+         <string name="componentFormat" value="float16"/>
+         <string name="fileFormat" value="openexr"/>
+         <string name="pixelFormat" value="spectrum"/>
+      </film>
+	
+   </sensor>
+
+
+</scene>

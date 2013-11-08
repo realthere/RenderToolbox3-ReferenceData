@@ -1,0 +1,92 @@
+2013-11-01 18:44:06 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 18:44:06 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeTableSphere/Mitsuba/daylight.xml" ..22013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/path.so" ..
+2013-11-01 18:44:06 WARN  main [scenehandler.cpp:761] Near file offset 267: Unqueried attribute "shadingSamples" in element "integrator"
+2013-11-01 18:44:06 INFO  main [spectrum.cpp:585] "mccBabel-12.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/ward.so" ..
+2013-11-01 18:44:06 INFO  main [spectrum.cpp:585] "mccBabel-8.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:44:06 INFO  main [spectrum.cpp:585] "mccBabel-7.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 0 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 1 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 2 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:44:06 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 3 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 4 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 5 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 6 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 7 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 8 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 9 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [SerializedMesh] Loading shape 10 from "daylightUnadjusted.serialized" ..
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 18:44:06 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 18:44:2013-11-01 18:44:06 INFO  ren0 [KDTreeBase] Finished -- took 67 ms.
+2013-11-01 18:44:07 INFO  ren0 [SamplingIntegrator] Starting render job (320x240, 128 samples, 8 cores, SSE2 enabled) ..
+2013-11-01 18:44:31 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeTableSphere/Mitsuba/blueish.exr" ..
+enabled) ..
+2013-11-01 18:44:31 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeTableSphere/Mitsuba/daylight.exr" ..
+-------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/path.so [MI path tracer]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 45.919 M
+    -  Shadow rays traced : 36.093 M
+
+  * Path tracer :
+    -  Average path length : 4.09 (40.23 M / 9.83 M)
+------------------------------------------------------------
+2013-11-01 18:44:31 INFO  ren0 [RenderQueue] Render time: 25.3270s
+2013-11-01 18:44:31 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/path.so [MI path tracer]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 45.914 M
+    -  Shadow rays traced : 36.087 M
+
+  * Path tracer :
+    -  Average path length : 4.09 (40.23 M / 9.83 M)
+------------------------------------------------------------
+2013-11-01 18:44:31 INFO  ren0 [RenderQueue] Render time: 25.6140s
+2013-11-01 18:44:31 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/path.so [MI path tracer]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 45.910 M
+    -  Shadow rays traced : 36.083 M
+
+  * Path tracer :
+    -  Average path length : 4.09 (40.22 M / 9.83 M)
+------------------------------------------------------------

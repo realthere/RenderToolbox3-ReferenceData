@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="lightCheckMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.385 0.385 0.28"/>
+	</bsdf>
+
+	<bsdf id="darkCheckMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.05 0.05 0.05"/>
+	</bsdf>
+
+	<bsdf id="cylinderMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0 0.5 0"/>
+	</bsdf>
+
+	<bsdf id="clothMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.35 0 0.05"/>
+	</bsdf>
+
+	<bsdf id="roomMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.3 0.3 0.3"/>
+	</bsdf>
+
+	<emitter id="leftAreaLamp-light" type="point">
+		<rgb name="intensity" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<translate x="-56" y="56" z="16"/>
+		</transform>
+	</emitter>
+
+	<shape id="leftAreaLamp-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<transform name="toWorld">
+			<matrix value="7.07107 0.982681 0.694862 -56 7.07107 -0.982681 -0.694862 56 0 7.37012 -0.185296 16 0 0 0 1"/>
+		</transform>
+	</shape>
+
+	<emitter id="frontAreaLamp-light" type="point">
+		<rgb name="intensity" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<translate x="0" y="-50" z="50"/>
+		</transform>
+	</emitter>
+
+	<shape id="frontAreaLamp-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="1"/>
+		<transform name="toWorld">
+			<matrix value="-10 3.73035e-13 1.23635e-07 0 8.74228e-07 5.3033 0.707107 -50 -8.74228e-07 5.3033 -0.707107 50 0 0 0 1"/>
+		</transform>
+	</shape>
+
+	<sensor id="Camera-camera" type="perspective">
+		<float name="fov" value="27.3909"/>
+		<float name="nearClip" value="0.1"/>
+		<float name="farClip" value="300"/>
+		<string name="fovAxis" value="smaller"/>
+
+		<transform name="toWorld">
+			<matrix value="-0.79159 0.267127 0.549571 -57 0.611052 0.346051 0.711944 -74 0 0.899384 -0.437159 45 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="1000"/>
+			<integer name="height" value="750"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+	<shape id="Cube-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="2"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -14 0 3.5 0 -14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_001-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="3"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -14 0 3.5 0 -7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_002-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="4"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -14 0 3.5 0 0 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_003-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="5"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -14 0 3.5 0 7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_004-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="6"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -14 0 3.5 0 14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_005-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="7"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -7 0 3.5 0 -14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_006-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="8"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -7 0 3.5 0 -7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_007-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="9"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -7 0 3.5 0 0 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_008-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="10"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -7 0 3.5 0 7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_009-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="11"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 -7 0 3.5 0 14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_010-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="12"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 0 0 3.5 0 -14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_011-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="13"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 0 0 3.5 0 -7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_012-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="14"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 0 0 3.5 0 0 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_013-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="15"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 0 0 3.5 0 7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_014-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="16"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 0 0 3.5 0 14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_015-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="17"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 7 0 3.5 0 -14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_016-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="18"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 7 0 3.5 0 -7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_017-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="19"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 7 0 3.5 0 0 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_018-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="20"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 7 0 3.5 0 7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_019-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="21"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 7 0 3.5 0 14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_020-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="22"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 14 0 3.5 0 -14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_021-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="23"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 14 0 3.5 0 -7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_022-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="24"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 14 0 3.5 0 0 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_023-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="25"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 14 0 3.5 0 7 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="darkCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cube_024-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="26"/>
+		<transform name="toWorld">
+			<matrix value="3.5 0 0 14 0 3.5 0 14 0 0 1.25 1.25 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="lightCheckMaterial-material"/>
+	</shape>
+
+	<shape id="Cylinder-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="27"/>
+		<transform name="toWorld">
+			<matrix value="6.2 0 0 -9.4 0 6.2 0 9.4 0 0 11 8 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="cylinderMaterial-material"/>
+	</shape>
+
+	<shape id="The_Cloth-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="28"/>
+		<transform name="toWorld">
+			<matrix value="56 0 0 0 0 56 0 0 0 0 1 0.05 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="clothMaterial-material"/>
+	</shape>
+
+	<shape id="floor-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="29"/>
+		<transform name="toWorld">
+			<matrix value="180 0 0 0 0 180 0 0 0 0 0.1 0 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+	<shape id="backWall-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="30"/>
+		<transform name="toWorld">
+			<matrix value="180 0 0 0 0 -4.37114e-06 -0.1 90 0 100 -4.37114e-09 50 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+	<shape id="leftWall-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="31"/>
+		<transform name="toWorld">
+			<matrix value="-4.37114e-06 0 0.1 -90 0 180 0 0 -100 0 -4.37114e-09 50 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+	<shape id="rightWall-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="32"/>
+		<transform name="toWorld">
+			<matrix value="-4.37114e-06 0 -0.1 90 0 180 0 0 100 0 -4.37114e-09 50 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+	<shape id="frontWall-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="33"/>
+		<transform name="toWorld">
+			<matrix value="180 0 0 0 0 -4.37114e-06 0.1 -90 0 -100 -4.37114e-09 50 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+	<shape id="ceiling-mesh-mesh_0" type="serialized">
+		<string name="filename" value="CheckerShadowNoDimples-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="34"/>
+		<transform name="toWorld">
+			<matrix value="180 0 0 0 0 -180 -8.74228e-09 0 0 1.57361e-05 -0.1 100 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="roomMaterial-material"/>
+	</shape>
+
+</scene>

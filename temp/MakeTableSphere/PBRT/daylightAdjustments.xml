@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <merge id="LightAbove-light" type="point">
+      <parameter name="I" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </merge>
+   <Material id="SphereMaterial-material" type="anisoward">
+      <parameter name="Kd" type="spectrum">300:0.1 800:0.7</parameter>
+      <parameter name="Ks" type="spectrum">300:0.3 800:0.3</parameter>
+      <parameter name="alphaU" type="float">0.1</parameter>
+      <parameter name="alphaV" type="float">0.1</parameter>
+   </Material>
+   <Material id="FloorMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd</parameter>
+   </Material>
+   <Material id="WallMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd</parameter>
+   </Material>
+   <Material id="TableMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="path">
+      <parameter name="maxdepth" type="integer">10</parameter>
+   </SurfaceIntegrator>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">512</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">320</parameter>
+      <parameter name="yresolution" type="integer">240</parameter>
+   </Film>
+</pbrt_xml>

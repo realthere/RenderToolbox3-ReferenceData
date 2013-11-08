@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="SphereMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.5 0.5 0.5"/>
+	</bsdf>
+
+	<bsdf id="CubeMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.72 0.72 0.72"/>
+	</bsdf>
+
+	<emitter id="Sun2-light" type="directional">
+		<rgb name="irradiance" value="0.1 0.0952859 0.0811438"/>
+
+		<transform name="toWorld">
+			<lookat origin="0.610626, 13.1533, 1.74115" target="0.840604, 12.1805, 1.76685"/>
+		</transform>
+
+	</emitter>
+
+	<emitter id="Sun1-light" type="directional">
+		<rgb name="irradiance" value="0.1 0.0952859 0.0811438"/>
+
+		<transform name="toWorld">
+			<lookat origin="-2.73092, -11.8185, -6.45171" target="-2.21907, -11.2039, -5.85149"/>
+		</transform>
+
+	</emitter>
+
+	<shape id="Sphere-mesh_0" type="serialized">
+		<string name="filename" value="Cuba05Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<transform name="toWorld">
+			<matrix value="1 0 0 5.032 0 1 0 -1.42286 0 0 1 0.472888 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="SphereMaterial-material"/>
+	</shape>
+
+	<emitter id="RearLamp-light" type="point">
+		<rgb name="intensity" value="10 1.04183 1.67904"/>
+
+		<transform name="toWorld">
+			<translate x="22.7714" y="-17.4765" z="0.344669"/>
+		</transform>
+	</emitter>
+
+	<shape id="Cube-mesh_0" type="serialized">
+		<string name="filename" value="Cuba05Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="1"/>
+		<transform name="toWorld">
+			<matrix value="0.965926 0.224144 -0.129409 1.55888 -0.258819 0.836516 -0.482963 -4.22533 -1.74533e-07 0.5 0.866025 1.36323 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="CubeMaterial-material"/>
+	</shape>
+
+	<emitter id="TopLamp-light" type="point">
+		<rgb name="intensity" value="1.2 10 10"/>
+
+		<transform name="toWorld">
+			<translate x="-1.49002" y="-5.01124" z="4.64047"/>
+		</transform>
+	</emitter>
+
+	<sensor id="Camera-camera" type="perspective">
+		<float name="fov" value="40.1764"/>
+		<float name="nearClip" value="0.1"/>
+		<float name="farClip" value="100"/>
+		<string name="fovAxis" value="smaller"/>
+
+		<transform name="toWorld">
+			<matrix value="0.766044 -0.111619 -0.633022 9.64 -0.642788 -0.133022 -0.754407 11.49 0 0.984808 -0.173648 3 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="200"/>
+			<integer name="height" value="160"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+</scene>

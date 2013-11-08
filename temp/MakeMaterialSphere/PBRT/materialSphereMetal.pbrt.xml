@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">200</parameter>
+      <parameter name="yresolution" type="integer">160</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">0 0 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">40.176374</parameter>
+   </Camera>
+   <Attribute id="Icosphere" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Icosphere-mesh</reference>
+      <reference name="instance_material" type="Material">Material-material</reference>
+   </Attribute>
+   <Shape id="Icosphere-mesh" type="trianglemesh">
+      <reference name="material" type="Material">Material-material</reference>
+      <reference name="Icosphere-mesh_0-material" type="Material">Material-material</reference>
+      <reference name="Icosphere-mesh_0" type="Include">mesh-data-Icosphere-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="Material-material" type="metal">
+      <parameter name="eta" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/PBRTMetals/Au.eta.spd</parameter>
+      <parameter name="k" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/PBRTMetals/Au.k.spd</parameter>
+      <parameter name="roughness" type="float">0.080000</parameter>
+   </Material>
+   <Attribute id="Point" type="">
+      <transformation name="location" type="Translate">0 5 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point-light</reference>
+   </Attribute>
+   <LightSource id="Point-light" type="point">
+      <parameter name="I" type="rgb">1 1 1</parameter>
+   </LightSource>
+</pbrt_xml>

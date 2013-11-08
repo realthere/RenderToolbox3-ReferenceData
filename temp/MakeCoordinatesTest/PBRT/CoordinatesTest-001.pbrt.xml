@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">320</parameter>
+      <parameter name="yresolution" type="integer">240</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">2 2 25</transformation>
+      <transformation name="rotationZ" type="Rotate">40.000020 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">10 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">-10 1 0 0</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">61.927516</parameter>
+   </Camera>
+   <Shape id="Cube_003-mesh" type="trianglemesh">
+      <reference name="Cube_003-mesh_0-material" type="Material">XRed-material</reference>
+      <reference name="Cube_003-mesh_0" type="Include">mesh-data-Cube_003-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">XRed-material</reference>
+   </Shape>
+   <Shape id="Cube_004-mesh" type="trianglemesh">
+      <reference name="Cube_004-mesh_0-material" type="Material">YGreen-material</reference>
+      <reference name="Cube_004-mesh_0" type="Include">mesh-data-Cube_004-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">YGreen-material</reference>
+   </Shape>
+   <Shape id="Cube_005-mesh" type="trianglemesh">
+      <reference name="Cube_005-mesh_0-material" type="Material">ZBlue-material</reference>
+      <reference name="Cube_005-mesh_0" type="Include">mesh-data-Cube_005-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ZBlue-material</reference>
+   </Shape>
+   <Shape id="Icosphere_002-mesh" type="trianglemesh">
+      <reference name="Icosphere_002-mesh_0-material" type="Material">XRed-material</reference>
+      <reference name="Icosphere_002-mesh_0" type="Include">mesh-data-Icosphere_002-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">XRed-material</reference>
+   </Shape>
+   <Shape id="Icosphere_003-mesh" type="trianglemesh">
+      <reference name="Icosphere_003-mesh_0-material" type="Material">YGreen-material</reference>
+      <reference name="Icosphere_003-mesh_0" type="Include">mesh-data-Icosphere_003-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">YGreen-material</reference>
+   </Shape>
+   <Shape id="Icosphere_004-mesh" type="trianglemesh">
+      <reference name="Icosphere_004-mesh_0-material" type="Material">ZBlue-material</reference>
+      <reference name="Icosphere_004-mesh_0" type="Include">mesh-data-Icosphere_004-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">ZBlue-material</reference>
+   </Shape>
+   <Attribute id="Point" type="">
+      <transformation name="location" type="Translate">-5 5 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point-light</reference>
+   </Attribute>
+   <LightSource id="Point-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_001" type="">
+      <transformation name="location" type="Translate">5 5 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_001-light</reference>
+   </Attribute>
+   <LightSource id="Point_001-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_002" type="">
+      <transformation name="location" type="Translate">-5 -5 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_002-light</reference>
+   </Attribute>
+   <LightSource id="Point_002-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_003" type="">
+      <transformation name="location" type="Translate">5 -5 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_003-light</reference>
+   </Attribute>
+   <LightSource id="Point_003-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_004" type="">
+      <transformation name="location" type="Translate">5 -5 -5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_004-light</reference>
+   </Attribute>
+   <LightSource id="Point_004-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_005" type="">
+      <transformation name="location" type="Translate">-5 -5 -5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_005-light</reference>
+   </Attribute>
+   <LightSource id="Point_005-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_006" type="">
+      <transformation name="location" type="Translate">-5 5 -5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_006-light</reference>
+   </Attribute>
+   <LightSource id="Point_006-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="Point_007" type="">
+      <transformation name="location" type="Translate">5 5 -5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point_007-light</reference>
+   </Attribute>
+   <LightSource id="Point_007-light" type="point">
+      <parameter name="I" type="rgb">10 10 10</parameter>
+   </LightSource>
+   <Attribute id="XMinCube" type="">
+      <transformation name="location" type="Translate">-10 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_003-mesh</reference>
+      <reference name="instance_material" type="Material">XRed-material</reference>
+   </Attribute>
+   <Attribute id="XPlusSphere" type="">
+      <transformation name="location" type="Translate">10 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Icosphere_002-mesh</reference>
+      <reference name="instance_material" type="Material">XRed-material</reference>
+   </Attribute>
+   <Material id="XRed-material" type="uber">
+      <parameter name="Kd" type="rgb">0.640000 0.020819 0.094347</parameter>
+      <parameter name="index" type="float">1.0</parameter>
+   </Material>
+   <Material id="YGreen-material" type="uber">
+      <parameter name="Kd" type="rgb">0.175277 0.640000 0.112242</parameter>
+      <parameter name="index" type="float">1.0</parameter>
+   </Material>
+   <Attribute id="YMinCube" type="">
+      <transformation name="location" type="Translate">0 -10 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_004-mesh</reference>
+      <reference name="instance_material" type="Material">YGreen-material</reference>
+   </Attribute>
+   <Attribute id="YPlusSphere" type="">
+      <transformation name="location" type="Translate">0 10 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Icosphere_003-mesh</reference>
+      <reference name="instance_material" type="Material">YGreen-material</reference>
+   </Attribute>
+   <Material id="ZBlue-material" type="uber">
+      <parameter name="Kd" type="rgb">0.089404 0.063700 0.640000</parameter>
+      <parameter name="index" type="float">1.0</parameter>
+   </Material>
+   <Attribute id="ZMinCube" type="">
+      <transformation name="location" type="Translate">0 0 -10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Cube_005-mesh</reference>
+      <reference name="instance_material" type="Material">ZBlue-material</reference>
+   </Attribute>
+   <Attribute id="ZPlusSphere" type="">
+      <transformation name="location" type="Translate">0 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Icosphere_004-mesh</reference>
+      <reference name="instance_material" type="Material">ZBlue-material</reference>
+   </Attribute>
+</pbrt_xml>

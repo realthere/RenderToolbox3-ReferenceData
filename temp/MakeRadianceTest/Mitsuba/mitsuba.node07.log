@@ -1,0 +1,70 @@
+2013-11-01 18:41:43 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 18:41:43 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeRadianceTest/Mitsuba/2xFarCamera.xml" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 18:41:43 INFO  main [SerializedMesh] Loading shape 0 from "2xFarCameraUnadjusted.serialized" ..
+2013-11-01 18:41:43 INFO  main [spectrum.cpp:585] "uniformSpectrum5nm.spd": loaded a spectral power distribution with 101 entries (between 300.000000 and 800.000000 nm)
+2013-11-01 18:41:43 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 18:41:43 INFO  main [SerializedMesh] Loading shape 1 from "2xFarCameraUnadjusted.serialized" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 18:41:43 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-11-01 18:41:43 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (34 primitives) ..
+2013-11-01 18:41:43 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
+2013-11-01 18:41:43 INFO  ren0 [SamplingIntegrator] Starting render job (100x100, 8 samples, 8 cores, SSE2 enable2012012013-11-01 18:41:43 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeRadianceTest/Mitsuba/2xFarCamera.exr" ..
+flector.exr" ..
+2013-11-01 18:41:43 INFO  ren0 [RenderQueue] Render time: 0.2560s
+2013-11-01 18:41:43 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 324.384 K
+    -  Shadow rays traced : 244.384 K
+------------------------------------------------------------
+2013-11-01 18:41:43 INFO  ren0 [RenderQueue] Render time: 0.3110s
+2013-11-01 18:41:43 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 256.800 K
+    -  Shadow rays traced : 176.800 K
+------------------------------------------------------------
+2013-11-01 18:41:43 INFO  ren0 [RenderQueue] Render time: 0.3290s
+2013-11-01 18:41:43 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 123.488 K
+    -  Shadow rays traced : 43.488 K
+------------------------------------------------------------
+

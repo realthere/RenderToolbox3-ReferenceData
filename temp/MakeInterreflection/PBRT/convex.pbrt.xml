@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">160</parameter>
+      <parameter name="yresolution" type="integer">100</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">64</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="path">
+      <parameter name="maxdepth" type="integer">8</parameter>
+   </SurfaceIntegrator>
+   <Material id="BlueMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 500:1 600:0 800:0</parameter>
+   </Material>
+   <Attribute id="BluePanel" type="">
+      <transformation name="location" type="Translate">-0.707 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">-45 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">RedPanelMesh-mesh</reference>
+      <reference name="instance_material" type="Material">BlueMaterial-material</reference>
+   </Attribute>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">0 0 5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">31.890790</parameter>
+   </Camera>
+   <Attribute id="Point" type="">
+      <transformation name="location" type="Translate">0 1 3</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Point-light</reference>
+   </Attribute>
+   <LightSource id="Point-light" type="point">
+      <parameter name="I" type="rgb">1 1 1</parameter>
+   </LightSource>
+   <Shape id="RedPanelMesh-mesh" type="trianglemesh">
+      <reference name="material" type="Material">BlueMaterial-material</reference>
+      <reference name="RedPanelMesh-mesh_0-material" type="Material">BlueMaterial-material</reference>
+      <reference name="RedPanelMesh-mesh_0" type="Include">mesh-data-RedPanelMesh-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="WhiteMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:1 800:1</parameter>
+   </Material>
+   <Attribute id="WhitePanel" type="">
+      <transformation name="location" type="Translate">0.707 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">45 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">WhitePanelMesh-mesh</reference>
+      <reference name="instance_material" type="Material">WhiteMaterial-material</reference>
+   </Attribute>
+   <Shape id="WhitePanelMesh-mesh" type="trianglemesh">
+      <reference name="material" type="Material">WhiteMaterial-material</reference>
+      <reference name="WhitePanelMesh-mesh_0-material" type="Material">WhiteMaterial-material</reference>
+      <reference name="WhitePanelMesh-mesh_0" type="Include">mesh-data-WhitePanelMesh-mesh_0.pbrt</reference>
+   </Shape>
+</pbrt_xml>

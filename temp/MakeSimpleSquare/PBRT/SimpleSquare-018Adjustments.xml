@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<pbrt_xml>
+   <merge id="Sun-light" type="distant">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+   </merge>
+   <Material id="SquareMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd</parameter>
+   </Material>
+
+    
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+
+    
+   <Sampler id="sampler" type="lowdiscrepancy">
+        
+      <parameter name="pixelsamples" type="integer">8</parameter>
+    
+   </Sampler>
+    
+    
+   <PixelFilter id="filter" type="gaussian">
+        
+      <parameter name="alpha" type="float">2</parameter>
+        
+      <parameter name="xwidth" type="float">2</parameter>
+        
+      <parameter name="ywidth" type="float">2</parameter>
+    
+   </PixelFilter>
+    
+
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">50</parameter>
+      <parameter name="yresolution" type="integer">50</parameter>
+   </Film>
+</pbrt_xml>

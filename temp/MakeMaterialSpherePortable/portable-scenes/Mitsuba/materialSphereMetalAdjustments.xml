@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<scene version="0.4.1">
+   <bsdf id="Material-material" type="bump">
+      <ref id="earthBumpMap-scaled" name="texture"/>
+      <ref id="Material-material-inner" name="bsdf"/>
+   </bsdf>
+   <texture id="earthBumpMap-scaled" type="scale">
+      <ref id="earthTexture" name="value"/>
+      <float name="scale" value="0.1"/>
+   </texture>
+   <texture id="earthTexture" type="bitmap">
+      <string name="filename" value="earthbump1k-stretch-rgb.exr"/>
+      <string name="wrapMode" value="repeat"/>
+      <float name="gamma" value="1"/>
+      <string name="filterType" value="ewa"/>
+      <float name="maxAnisotropy" value="20"/>
+      <float name="uoffset" value="0.0"/>
+      <float name="voffset" value="0.0"/>
+      <float name="uscale" value="1.0"/>
+      <float name="vscale" value="1.0"/>
+   </texture>
+   <bsdf id="Material-material-inner" type="roughconductor">
+      <float name="alpha" value="0.4"/>
+      <spectrum filename="Au.eta.spd" name="eta"/>
+      <spectrum filename="Au.k.spd" name="k"/>
+   </bsdf>
+
+    
+   <integrator id="integrator" type="direct">
+        
+      <integer name="shadingSamples" value="32"/>
+    
+   </integrator>
+    
+    
+   <sampler id="Camera-camera_sampler" type="ldsampler">
+        
+      <integer name="sampleCount" value="8"/>
+    
+   </sampler>
+    
+    
+   <merge id="Camera-camera_film" type="hdrfilm">
+        
+      <string name="fileFormat" value="openexr"/>
+        
+      <string name="pixelFormat" value="spectrum"/>
+        
+      <string name="componentFormat" value="float16"/>
+        
+      <boolean name="banner" value="false"/>
+        
+        
+      <rfilter type="gaussian">
+            
+         <float name="stddev" value="0.5"/>
+        
+      </rfilter>
+    
+   </merge>
+    
+
+</scene>

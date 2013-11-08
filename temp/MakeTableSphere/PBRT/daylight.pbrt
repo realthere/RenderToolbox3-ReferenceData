@@ -1,0 +1,327 @@
+# Film
+Film "image" 
+  "integer xresolution" [320] 
+  "integer yresolution" [240] 
+
+# Integrator
+SurfaceIntegrator "path" 
+  "integer maxdepth" [10] 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [512] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate -85.000040 1.000000 0.000000 0.000000
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate 0.500000 5.000000 -3.500000
+# Camera-camera
+Camera "perspective" 
+  "float fov" [37.849287] 
+
+WorldBegin
+
+# material FloorMaterial-material
+MakeNamedMaterial "FloorMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" 
+
+# material SphereMaterial-material
+MakeNamedMaterial "SphereMaterial-material" 
+  "string type" "anisoward" 
+  "spectrum Kd" [300 0.1 800 0.7] 
+  "spectrum Ks" [300 0.3 800 0.3] 
+  "float alphaU" [0.1] 
+  "float alphaV" [0.1] 
+
+# material TableMaterial-material
+MakeNamedMaterial "TableMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" 
+
+# material WallMaterial-material
+MakeNamedMaterial "WallMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" 
+
+ObjectBegin "Cube_001-mesh"
+# object Cube_001-mesh
+NamedMaterial "TableMaterial-material"
+Include "mesh-data-Cube_001-mesh_0.pbrt"
+NamedMaterial "TableMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Cylinder-mesh"
+# object Cylinder-mesh
+NamedMaterial "TableMaterial-material"
+Include "mesh-data-Cylinder-mesh_0.pbrt"
+NamedMaterial "TableMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_001-mesh"
+# object Cylinder_001-mesh
+NamedMaterial "TableMaterial-material"
+Include "mesh-data-Cylinder_001-mesh_0.pbrt"
+NamedMaterial "TableMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_002-mesh"
+# object Cylinder_002-mesh
+NamedMaterial "TableMaterial-material"
+Include "mesh-data-Cylinder_002-mesh_0.pbrt"
+NamedMaterial "TableMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_003-mesh"
+# object Cylinder_003-mesh
+NamedMaterial "TableMaterial-material"
+Include "mesh-data-Cylinder_003-mesh_0.pbrt"
+NamedMaterial "TableMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Icosphere-mesh"
+# object Icosphere-mesh
+NamedMaterial "SphereMaterial-material"
+NamedMaterial "SphereMaterial-material"
+Include "mesh-data-Icosphere-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane-mesh"
+# object Plane-mesh
+NamedMaterial "FloorMaterial-material"
+NamedMaterial "FloorMaterial-material"
+Include "mesh-data-Plane-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane_001-mesh"
+# object Plane_001-mesh
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_001-mesh_0.pbrt"
+NamedMaterial "WallMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_002-mesh"
+# object Plane_002-mesh
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_002-mesh_0.pbrt"
+NamedMaterial "WallMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_003-mesh"
+# object Plane_003-mesh
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_003-mesh_0.pbrt"
+NamedMaterial "WallMaterial-material"
+
+ObjectEnd
+
+ObjectBegin "Plane_004-mesh"
+# object Plane_004-mesh
+NamedMaterial "WallMaterial-material"
+NamedMaterial "WallMaterial-material"
+Include "mesh-data-Plane_004-mesh_0.pbrt"
+
+ObjectEnd
+
+# Ceiling
+AttributeBegin
+TransformBegin Translate 0 0 20
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 180.000100 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Floor
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Icosphere
+AttributeBegin
+TransformBegin Translate -1 5 3.09
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Icosphere-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# LightAbove
+AttributeBegin
+TransformBegin Translate -1 1 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source LightAbove-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TableLegBackLeft
+AttributeBegin
+TransformBegin Translate -2.75 6.25 1
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.1 0.1 1
+ObjectInstance "Cylinder_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TableLegBackRight
+AttributeBegin
+TransformBegin Translate 2.75 6.25 1
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.1 0.1 1
+ObjectInstance "Cylinder-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TableLegFrontLeft
+AttributeBegin
+TransformBegin Translate -2.75 3.75 1
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.1 0.1 1
+ObjectInstance "Cylinder_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TableLegFrontRight
+AttributeBegin
+TransformBegin Translate 2.75 3.75 1
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.1 0.1 1
+ObjectInstance "Cylinder_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# TableTop
+AttributeBegin
+TransformBegin Translate 0 5 2
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 3 1.5 0.1
+ObjectInstance "Cube_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallBack
+AttributeBegin
+TransformBegin Translate 0 10 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 90.000040 1.000000 0.000000 0.000000
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallLeft
+AttributeBegin
+TransformBegin Translate -10 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90.000040 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallRight
+AttributeBegin
+TransformBegin Translate 10 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate -90.000040 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 10 10 1
+ObjectInstance "Plane_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

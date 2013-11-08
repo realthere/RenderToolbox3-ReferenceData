@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="Floor-material" type="diffuse">
+		<rgb name="reflectance" value="0.64 0.64 0.64"/>
+	</bsdf>
+
+	<bsdf id="Textured-material" type="diffuse">
+		<rgb name="reflectance" value="0.64 0.64 0.64"/>
+	</bsdf>
+
+	<emitter id="Sun-light" type="directional">
+		<rgb name="irradiance" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<lookat origin="10, -10, 5" target="9.38763, -9.38763, 4.5"/>
+		</transform>
+
+	</emitter>
+
+	<shape id="Plane_001-mesh_0" type="serialized">
+		<string name="filename" value="Dice-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<transform name="toWorld">
+			<matrix value="10 0 0 0 0 10 0 0 0 0 1 0 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Floor-material"/>
+	</shape>
+
+	<shape id="Cube_003-mesh_0" type="serialized">
+		<string name="filename" value="Dice-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="1"/>
+		<transform name="toWorld">
+			<matrix value="0.908939 -0.323642 0.262842 -1.96781 0.413051 0.613217 -0.673315 -0.416582 0.0567338 0.72057 0.691058 1.37343 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Textured-material"/>
+	</shape>
+
+	<shape id="Cube_002-mesh_0" type="serialized">
+		<string name="filename" value="Dice-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="2"/>
+		<transform name="toWorld">
+			<matrix value="-0.682241 -0.731054 0.0103678 -0.667505 0.638814 -0.602939 -0.477892 4.53155 0.355616 -0.319415 0.878357 1.69956 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Textured-material"/>
+	</shape>
+
+	<shape id="Cube_000-mesh_0" type="serialized">
+		<string name="filename" value="Dice-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="3"/>
+		<transform name="toWorld">
+			<matrix value="-0.684756 0.694153 0.221951 3.49285 -0.61639 -0.714131 0.331783 -1.15155 0.38881 0.0903821 0.916874 1.31411 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Textured-material"/>
+	</shape>
+
+	<shape id="Cube_001-mesh_0" type="serialized">
+		<string name="filename" value="Dice-001Unadjusted.serialized"/>
+		<integer name="shapeIndex" value="4"/>
+		<transform name="toWorld">
+			<matrix value="0.387018 -0.89986 0.201169 -3.57911 -0.579384 -0.0676031 0.812246 3.95222 -0.717308 -0.430908 -0.547528 5.59663 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="Textured-material"/>
+	</shape>
+
+	<emitter id="Point-light" type="point">
+		<rgb name="intensity" value="1 1 1"/>
+
+		<transform name="toWorld">
+			<translate x="-5" y="-5" z="20"/>
+		</transform>
+	</emitter>
+
+	<sensor id="Camera-camera" type="perspective">
+		<float name="fov" value="37.8493"/>
+		<float name="nearClip" value="0.1"/>
+		<float name="farClip" value="100"/>
+		<string name="fovAxis" value="smaller"/>
+
+		<transform name="toWorld">
+			<matrix value="-0.939693 0.0298093 -0.340719 5 -0.34202 -0.0819004 0.936117 -10 0 0.996195 0.0871566 1.57764 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="640"/>
+			<integer name="height" value="480"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+</scene>

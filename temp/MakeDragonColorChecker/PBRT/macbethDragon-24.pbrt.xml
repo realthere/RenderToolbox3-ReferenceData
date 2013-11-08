@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">150</parameter>
+      <parameter name="yresolution" type="integer">120</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <AreaLightSource id="LightX-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <AreaLightSource id="LightY-mesh-area-light" type="diffuse">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+      <parameter name="nsamples" type="integer">8</parameter>
+   </AreaLightSource>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">-15 -15 10</transformation>
+      <transformation name="rotationZ" type="Rotate">-45.000020 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">75.000030 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">-1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">40.176374</parameter>
+   </Camera>
+   <Attribute id="Ceiling" type="">
+      <transformation name="location" type="Translate">0 0 20</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">180.000100 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">10 10 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane_003-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Attribute id="Dragon" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">-13.000010 0.000000 0.000000 1.000000</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90.000010 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">default-mesh</reference>
+      <reference name="instance_material" type="Material">DragonMaterial-material</reference>
+   </Attribute>
+   <Material id="DragonMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-24.spd</parameter>
+   </Material>
+   <Attribute id="Floor" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 10</transformation>
+      <reference name="instance_geometry" type="Object">Plane-mesh</reference>
+      <reference name="instance_material" type="Material">FloorMaterial-material</reference>
+   </Attribute>
+   <Material id="FloorMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0.5 800:0.5</parameter>
+   </Material>
+   <Attribute id="LightX" type="">
+      <transformation name="location" type="Translate">-11 0 11</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">120.000100 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">LightX-mesh</reference>
+      <reference name="instance_material" type="Material">ReflectorMaterial-material</reference>
+   </Attribute>
+   <Shape id="LightX-mesh" type="trianglemesh">
+      <reference name="material" type="Material">ReflectorMaterial-material</reference>
+      <reference name="LightX-mesh_0-material" type="Material">ReflectorMaterial-material</reference>
+      <reference name="LightX-mesh_0" type="Include">mesh-data-LightX-mesh_0.pbrt</reference>
+      <reference name="area-light" type="AreaLightSource">LightX-mesh-area-light</reference>
+   </Shape>
+   <Attribute id="LightY" type="">
+      <transformation name="location" type="Translate">0 -11 11</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">-120.000100 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">LightY-mesh</reference>
+      <reference name="instance_material" type="Material">ReflectorMaterial-material</reference>
+   </Attribute>
+   <Shape id="LightY-mesh" type="trianglemesh">
+      <reference name="material" type="Material">ReflectorMaterial-material</reference>
+      <reference name="LightY-mesh_0-material" type="Material">ReflectorMaterial-material</reference>
+      <reference name="LightY-mesh_0" type="Include">mesh-data-LightY-mesh_0.pbrt</reference>
+      <reference name="area-light" type="AreaLightSource">LightY-mesh-area-light</reference>
+   </Shape>
+   <Shape id="Plane-mesh" type="trianglemesh">
+      <reference name="material" type="Material">FloorMaterial-material</reference>
+      <reference name="Plane-mesh_0-material" type="Material">FloorMaterial-material</reference>
+      <reference name="Plane-mesh_0" type="Include">mesh-data-Plane-mesh_0.pbrt</reference>
+   </Shape>
+   <Shape id="Plane_001-mesh" type="trianglemesh">
+      <reference name="Plane_001-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_001-mesh_0" type="Include">mesh-data-Plane_001-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">WallMaterial-material</reference>
+   </Shape>
+   <Shape id="Plane_002-mesh" type="trianglemesh">
+      <reference name="Plane_002-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_002-mesh_0" type="Include">mesh-data-Plane_002-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">WallMaterial-material</reference>
+   </Shape>
+   <Shape id="Plane_003-mesh" type="trianglemesh">
+      <reference name="material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_003-mesh_0-material" type="Material">WallMaterial-material</reference>
+      <reference name="Plane_003-mesh_0" type="Include">mesh-data-Plane_003-mesh_0.pbrt</reference>
+   </Shape>
+   <Material id="ReflectorMaterial-material" type="uber">
+      <parameter name="Kd" type="rgb">1 1 1</parameter>
+      <parameter name="index" type="float">1.0</parameter>
+   </Material>
+   <Material id="WallMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">300:0.75 800:0.75</parameter>
+   </Material>
+   <Attribute id="WallX" type="">
+      <transformation name="location" type="Translate">10 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">-90.000040 0.000000 1.000000 0.000000</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">10 10 10</transformation>
+      <reference name="instance_geometry" type="Object">Plane_002-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Attribute id="WallY" type="">
+      <transformation name="location" type="Translate">0 10 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">90.000040 1.000000 0.000000 0.000000</transformation>
+      <transformation name="scale" type="Scale">10 10 10</transformation>
+      <reference name="instance_geometry" type="Object">Plane_001-mesh</reference>
+      <reference name="instance_material" type="Material">WallMaterial-material</reference>
+   </Attribute>
+   <Shape id="default-mesh" type="trianglemesh">
+      <reference name="material" type="Material">DragonMaterial-material</reference>
+      <reference name="default-mesh_0-material" type="Material">DragonMaterial-material</reference>
+      <reference name="default-mesh_0" type="Include">mesh-data-default-mesh_0.pbrt</reference>
+   </Shape>
+</pbrt_xml>

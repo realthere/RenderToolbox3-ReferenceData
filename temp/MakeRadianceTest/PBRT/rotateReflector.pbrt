@@ -1,0 +1,106 @@
+# Film
+Film "image" 
+  "integer xresolution" [100] 
+  "integer yresolution" [100] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate 45 1 0 0
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate 0 -5 -5
+# Camera-camera
+Camera "perspective" 
+  "float fov" [49.134340] 
+
+WorldBegin
+
+# material AreaLight-material
+MakeNamedMaterial "AreaLight-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 0 800 0] 
+
+# material Material-material
+MakeNamedMaterial "Material-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 1 800 1] 
+
+ObjectBegin "AreaLight-mesh"
+# object AreaLight-mesh
+NamedMaterial "AreaLight-material"
+NamedMaterial "AreaLight-material"
+Include "mesh-data-AreaLight-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane-mesh"
+# object Plane-mesh
+NamedMaterial "Material-material"
+Include "mesh-data-Plane-mesh_0.pbrt"
+NamedMaterial "Material-material"
+
+ObjectEnd
+
+# AreaLight
+AttributeBegin
+TransformBegin Translate 0.000000 0.000000 100.100000
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 180.000100 1.000000 0.000000 0.000000
+TransformBegin Scale 0.01 0.01 1
+ObjectInstance "AreaLight-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Point
+AttributeBegin
+TransformBegin Translate 0 0 100
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Point-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeRadianceTest/uniformSpectrum5nm.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Reflector
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate -41.400000 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+ObjectInstance "Plane-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

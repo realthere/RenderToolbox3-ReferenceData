@@ -1,0 +1,61 @@
+2013-11-01 17:47:38 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 17:47:38 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCubanSphere/Mitsuba/Cuba36.xml" ..
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-11-01 17:47:38 INFO  main [spectrum.cpp:585] "mccBabel-9.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2013-11-01 17:47:38 INFO  main [spectrum.cpp:585] "mccBabel-4.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 17:47:38 WARN  main [properties.cpp:78] Property "irradiance" was specified multiple times!
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/directional.so" ..
+2013-11-01 17:47:38 WARN  main [properties.cpp:78] Property "irradiance" was specified multiple times!
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 17:47:38 INFO  main [SerializedMesh] Loading shape 0 from "Cuba36Unadjusted.serialized" ..
+2013-11-01 17:47:38 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:47:38 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 17:47:38 INFO  main [SerializedMesh] Loading shape 1 from "Cuba36Unadjusted.serialized" ..
+2013-11-01 17:47:38 INFO  main [spectrum.cpp:585] "DimFlat.spd": loaded a spectral power distribution with 2 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:47:38 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 17:47:38 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-11-01 17:47:38 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (972 primitives) ..
+2013-11-01 17:47:38 INFO  ren0 [KDTreeBase] Finished -- took 4 ms.
+2013-11-01 17:47:38 INFO  ren0 [SamplingIntegrator] Starting render job (200x160, 8 samples, 8 cores, SSE2 enabled) ..
+2013-11-01 17:47:38 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCubanSphere/Mitsuba/Cuba36.exr" ..
+2013-11-01 17:47:38 INFO  ren0 [RenderQueue] Render time: 0.5180s
+2013-11-01 17:47:38 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 588.406 K
+    -  Shadow rays traced : 333.216 K
+------------------------------------------------------------
+2013-11-01 17:47:38 INFO  ren0 [RenderQueue] Render time: 0.3680s
+2013-11-01 17:47:38 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/directional.so [Directional emitter]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+
+  * General :
+    -  Normal rays traced : 599.270 K
+    -  Shadow rays traced : 344.320 K
+------------------------------------------------------------

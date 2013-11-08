@@ -1,0 +1,86 @@
+2013-11-01 17:34:53 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 17:34:53 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCheckerShadowScene/Mitsuba/CheckerShadowNoDimples-001.xml" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/bdpt.so" ..
+2013-11-01 17:34:53 WARN  main [scenehandler.cpp:761] Near file offset 364: Unqueried attribute "shadingSamples" in element "integrator"
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.44_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.03_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/ward.so" ..
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.20_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.03_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "BlueRGB_scale0.70_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.so" ..
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "RedRGB_scale0.30_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "RedRGB_scale0.10_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.20_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.03_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale1.00_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/area.so" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 0 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/diffuse.so" ..
+2013-11-01 17:34:53 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 17:34:53 INFO  main [spectrum.cpp:585] "GrayRGB_scale0.16_Spectrum.spd": loaded a spectral power distribution with 401 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 1 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 17:34:53 WARN  main [scenehandler.cpp:761] Near file offset 5470: Unqueried attribute "pixelSamples" in element "sampler"
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 17:34:53 INFO  main [PluginManager] Loading plugin "plugins/perspective.so" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 2 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 3 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 4 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 5 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 6 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 7 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 8 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 9 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 10 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 11 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 12 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 13 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 14 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 15 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 16 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 17 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 18 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 19 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 20 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 21 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 22 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 23 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 24 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 25 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 26 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 27 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:53 INFO  main [SerializedMesh] Loading shape 28 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 29 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 30 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 31 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 32 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 33 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  main [SerializedMesh] Loading shape 34 from "CheckerShadowNoDimples-001Unadjusted.serialized" ..
+2013-11-01 17:34:54 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (501668 primitives) ..
+2013-11-01 17:34:54 INFO  ren0 [KDTreeBase] Finished -- took 668 ms.
+2013-11-01 17:34:54 INFO  ren0 [BDPTIntegrator] Starting render job (1000x750, 128 samples, 8 cores, SSE2 enabled) ..
+2013-11-01 17:45:26 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeCheckerShadowScene/Mitsuba/CheckerShadowNoDimples-001.exr" ..
+2013-11-01 17:45:27 INFO  ren0 [RenderQueue] Render time: 10.5524m
+2013-11-01 17:45:27 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.so [Area light]
+    -  plugins/bdpt.so [Bidirectional path tracer]
+    -  plugins/diffuse.so [Smooth diffuse BRDF]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/perspective.so [Perspective camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/roughplastic.so [Rough plastic BRDF]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 1.083 G
+------------------------------------------------------------

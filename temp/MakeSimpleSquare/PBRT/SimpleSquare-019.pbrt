@@ -1,0 +1,80 @@
+# Film
+Film "image" 
+  "integer xresolution" [50] 
+  "integer yresolution" [50] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale 1 1 1
+Rotate 0 1 0 0
+Rotate 0 0 1 0
+Rotate 0 0 0 1
+Translate -0.000000 -0.000000 -2.500000
+# Camera-camera
+Camera "perspective" 
+  "float fov" [49.134340] 
+
+WorldBegin
+
+# material SquareMaterial-material
+MakeNamedMaterial "SquareMaterial-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd" 
+
+ObjectBegin "Plane-mesh"
+# object Plane-mesh
+NamedMaterial "SquareMaterial-material"
+Include "mesh-data-Plane-mesh_0.pbrt"
+NamedMaterial "SquareMaterial-material"
+
+ObjectEnd
+
+# Square
+AttributeBegin
+TransformBegin Translate 0 0 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+ObjectInstance "Plane-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sun
+AttributeBegin
+TransformBegin Translate 0 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Sun-light
+LightSource "distant" 
+  "spectrum L" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

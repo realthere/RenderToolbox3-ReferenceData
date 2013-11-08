@@ -1,0 +1,1683 @@
+# Film
+Film "image" 
+  "integer xresolution" [640] 
+  "integer yresolution" [480] 
+
+# Integrator
+SurfaceIntegrator "directlighting" 
+
+# Sampler
+Sampler "lowdiscrepancy" 
+  "integer pixelsamples" [8] 
+
+# Filter
+PixelFilter "gaussian" 
+  "float alpha" [2] 
+  "float xwidth" [2] 
+  "float ywidth" [2] 
+
+# Camera-camera internal orientation
+LookAt 0 0 0 0 0 -1 0 1 0
+# Camera scene orientation
+Scale -1 1 1
+Rotate -85.000040 1.000000 0.000000 0.000000
+Rotate 0 0 1 0
+Rotate 30.000020 0.000000 0.000000 1.000000
+Translate 30 30 -10
+# Camera-camera
+Camera "perspective" 
+  "float fov" [37.849287] 
+
+WorldBegin
+
+# material AreaLight-material
+MakeNamedMaterial "AreaLight-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 1 800 1] 
+
+# material ChromeMinnaertBlinn-material
+MakeNamedMaterial "ChromeMinnaertBlinn-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-2.spd" 
+
+# material Grey_001-material
+MakeNamedMaterial "Grey_001-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-4.spd" 
+
+# material Grey_002-material
+MakeNamedMaterial "Grey_002-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-5.spd" 
+
+# material HalfRed-material
+MakeNamedMaterial "HalfRed-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-6.spd" 
+
+# material HalfRed_001-material
+MakeNamedMaterial "HalfRed_001-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-7.spd" 
+
+# material HangLampReflector-material
+MakeNamedMaterial "HangLampReflector-material" 
+  "string type" "uber" 
+  "rgb Kd" [0.800000 0.800000 0.800000] 
+  "float index" [1.0] 
+
+# material HangingLampReflector-material
+MakeNamedMaterial "HangingLampReflector-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 1 800 1] 
+
+# material Khaki-material
+MakeNamedMaterial "Khaki-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-8.spd" 
+
+# material Magenta-material
+MakeNamedMaterial "Magenta-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-9.spd" 
+
+# material Material-material
+MakeNamedMaterial "Material-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-10.spd" 
+
+# material Material_001-material
+MakeNamedMaterial "Material_001-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-11.spd" 
+
+# material Material_002-material
+MakeNamedMaterial "Material_002-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-12.spd" 
+
+# material Material_003-material
+MakeNamedMaterial "Material_003-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-13.spd" 
+
+# material Material_004-material
+MakeNamedMaterial "Material_004-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-14.spd" 
+
+# material Material_005-material
+MakeNamedMaterial "Material_005-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-15.spd" 
+
+# material Material_007-material
+MakeNamedMaterial "Material_007-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-16.spd" 
+
+# material Material_008-material
+MakeNamedMaterial "Material_008-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-17.spd" 
+
+# material Material_009-material
+MakeNamedMaterial "Material_009-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-18.spd" 
+
+# material Material__172757-material
+MakeNamedMaterial "Material__172757-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-19.spd" 
+
+# material Material__210043-material
+MakeNamedMaterial "Material__210043-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-20.spd" 
+
+# material MediumGrey-material
+MakeNamedMaterial "MediumGrey-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-21.spd" 
+
+# material Red-material
+MakeNamedMaterial "Red-material" 
+  "string type" "matte" 
+  "spectrum Kd" "/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-22.spd" 
+
+# material WallLight-material
+MakeNamedMaterial "WallLight-material" 
+  "string type" "matte" 
+  "spectrum Kd" [300 1 800 1] 
+
+ObjectBegin "Baker_Clas_13_-_Defau-mesh"
+# object Baker_Clas_13_-_Defau-mesh
+NamedMaterial "HalfRed_001-material"
+NamedMaterial "HalfRed_001-material"
+Include "mesh-data-Baker_Clas_13_-_Defau-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "CameraLight-mesh"
+# object CameraLight-mesh
+NamedMaterial "AreaLight-material"
+NamedMaterial "AreaLight-material"
+Include "mesh-data-CameraLight-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Circle52_Material__21-mesh"
+# object Circle52_Material__21-mesh
+NamedMaterial "Material__172757-material"
+NamedMaterial "Material__172757-material"
+Include "mesh-data-Circle52_Material__21-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube-mesh"
+# object Cube-mesh
+NamedMaterial "Magenta-material"
+Include "mesh-data-Cube-mesh_0.pbrt"
+NamedMaterial "Magenta-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_001-mesh"
+# object Cube_001-mesh
+NamedMaterial "Khaki-material"
+NamedMaterial "Khaki-material"
+Include "mesh-data-Cube_001-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_002-mesh"
+# object Cube_002-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_002-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_003-mesh"
+# object Cube_003-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_003-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_004-mesh"
+# object Cube_004-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_004-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_005-mesh"
+# object Cube_005-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_005-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_006-mesh"
+# object Cube_006-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cube_006-mesh_0.pbrt"
+NamedMaterial "ChromeMinnaertBlinn-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_007-mesh"
+# object Cube_007-mesh
+NamedMaterial "Grey_002-material"
+Include "mesh-data-Cube_007-mesh_0.pbrt"
+NamedMaterial "Grey_002-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_008-mesh"
+# object Cube_008-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cube_008-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_009-mesh"
+# object Cube_009-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_009-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_010-mesh"
+# object Cube_010-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_010-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_011-mesh"
+# object Cube_011-mesh
+NamedMaterial "Red-material"
+Include "mesh-data-Cube_011-mesh_0.pbrt"
+NamedMaterial "Red-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_012-mesh"
+# object Cube_012-mesh
+NamedMaterial "Material_005-material"
+Include "mesh-data-Cube_012-mesh_0.pbrt"
+NamedMaterial "Material_005-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_013-mesh"
+# object Cube_013-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cube_013-mesh_0.pbrt"
+NamedMaterial "ChromeMinnaertBlinn-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_014-mesh"
+# object Cube_014-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_014-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_015-mesh"
+# object Cube_015-mesh
+NamedMaterial "Material_007-material"
+Include "mesh-data-Cube_015-mesh_0.pbrt"
+NamedMaterial "Material_007-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_016-mesh"
+# object Cube_016-mesh
+NamedMaterial "Material_008-material"
+NamedMaterial "Material_008-material"
+Include "mesh-data-Cube_016-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_017-mesh"
+# object Cube_017-mesh
+NamedMaterial "Material_003-material"
+Include "mesh-data-Cube_017-mesh_0.pbrt"
+NamedMaterial "Material_003-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_018-mesh"
+# object Cube_018-mesh
+NamedMaterial "Material-material"
+Include "mesh-data-Cube_018-mesh_0.pbrt"
+NamedMaterial "Material-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_019-mesh"
+# object Cube_019-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_019-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_020-mesh"
+# object Cube_020-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_020-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_021-mesh"
+# object Cube_021-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_021-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_022-mesh"
+# object Cube_022-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_022-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_023-mesh"
+# object Cube_023-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_023-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_024-mesh"
+# object Cube_024-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_024-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cube_025-mesh"
+# object Cube_025-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_025-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_026-mesh"
+# object Cube_026-mesh
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_026-mesh_0.pbrt"
+NamedMaterial "MediumGrey-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_027-mesh"
+# object Cube_027-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cube_027-mesh_0.pbrt"
+NamedMaterial "ChromeMinnaertBlinn-material"
+
+ObjectEnd
+
+ObjectBegin "Cube_028-mesh"
+# object Cube_028-mesh
+NamedMaterial "MediumGrey-material"
+NamedMaterial "MediumGrey-material"
+Include "mesh-data-Cube_028-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_004-mesh"
+# object Cylinder_004-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cylinder_004-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_005-mesh"
+# object Cylinder_005-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cylinder_005-mesh_0.pbrt"
+NamedMaterial "ChromeMinnaertBlinn-material"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_010-mesh"
+# object Cylinder_010-mesh
+NamedMaterial "ChromeMinnaertBlinn-material"
+NamedMaterial "ChromeMinnaertBlinn-material"
+Include "mesh-data-Cylinder_010-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Cylinder_012-mesh"
+# object Cylinder_012-mesh
+Include "mesh-data-Cylinder_012-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Line178954_13_-_Defau-mesh"
+# object Line178954_13_-_Defau-mesh
+NamedMaterial "HalfRed-material"
+NamedMaterial "HalfRed-material"
+Include "mesh-data-Line178954_13_-_Defau-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Mesh_006-mesh"
+# object Mesh_006-mesh
+NamedMaterial "Material_001-material"
+NamedMaterial "Material_001-material"
+Include "mesh-data-Mesh_006-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane-mesh"
+# object Plane-mesh
+NamedMaterial "Material_002-material"
+NamedMaterial "Material_002-material"
+Include "mesh-data-Plane-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane_001-mesh"
+# object Plane_001-mesh
+NamedMaterial "Material_004-material"
+NamedMaterial "Material_004-material"
+Include "mesh-data-Plane_001-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane_002-mesh"
+# object Plane_002-mesh
+NamedMaterial "Grey_002-material"
+NamedMaterial "Grey_002-material"
+Include "mesh-data-Plane_002-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Plane_005-mesh"
+# object Plane_005-mesh
+NamedMaterial "Grey_001-material"
+NamedMaterial "Grey_001-material"
+Include "mesh-data-Plane_005-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "Sphere_001-mesh"
+# object Sphere_001-mesh
+NamedMaterial "HangLampReflector-material"
+Include "mesh-data-Sphere_001-mesh_0.pbrt"
+NamedMaterial "HangLampReflector-material"
+
+ObjectEnd
+
+ObjectBegin "Sphere_002-mesh"
+# object Sphere_002-mesh
+Include "mesh-data-Sphere_002-mesh_0.pbrt"
+
+ObjectEnd
+
+ObjectBegin "WallLight-mesh"
+# object WallLight-mesh
+NamedMaterial "WallLight-material"
+NamedMaterial "WallLight-material"
+Include "mesh-data-WallLight-mesh_0.pbrt"
+
+ObjectEnd
+
+# Baker_Clas_13_-_Defau
+AttributeBegin
+TransformBegin Translate -22.39188 23.7237 17.12396
+TransformBegin Rotate -180 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.00793595 0.00793595 0.00793595
+ObjectInstance "Baker_Clas_13_-_Defau-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# CameraLight
+AttributeBegin
+TransformBegin Translate -10 -30.16 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate -90.000040 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source CameraLight-mesh-area-light
+AreaLightSource "diffuse" 
+  "spectrum L" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd" 
+  "integer nsamples" [8] 
+# object CameraLight-mesh
+NamedMaterial "AreaLight-material"
+NamedMaterial "AreaLight-material"
+Include "mesh-data-CameraLight-mesh_0.pbrt"
+
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Circle52_Material__21
+AttributeBegin
+TransformBegin Translate -22.48526 23.70942 14.54376
+TransformBegin Rotate -180 0 0 1
+TransformBegin Rotate 0.000000 0.000000 1.000000 0.000000
+TransformBegin Rotate -0.000020 1.000000 0.000000 0.000000
+TransformBegin Scale 0.002119766 0.002119766 0.002119765
+ObjectInstance "Circle52_Material__21-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube
+AttributeBegin
+TransformBegin Translate -12.20769 11.3214 2.209042
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 6.428616 2.200383 -5.3745
+ObjectInstance "Cube_003-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_001
+AttributeBegin
+TransformBegin Translate -4.861588 10.67613 7.416005
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.341334 0.5810671 7.5
+ObjectInstance "Cube_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_002
+AttributeBegin
+TransformBegin Translate 18.76017 7.030831 7.969778
+TransformBegin Rotate 180.939200 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.853750 0.000000 1.000000 0.000000
+TransformBegin Rotate -90.364780 1.000000 0.000000 0.000000
+TransformBegin Scale 0.1756652 1 1
+ObjectInstance "Cube_016-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_003
+AttributeBegin
+TransformBegin Translate -14.76214 11.85653 3.189848
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_028-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_004
+AttributeBegin
+TransformBegin Translate -15.54602 14.62232 4.605018
+TransformBegin Rotate 0.000000 0.000000 0.000000 1.000000
+TransformBegin Rotate -0.000000 0.000000 1.000000 0.000000
+TransformBegin Rotate -20.168390 1.000000 0.000000 0.000000
+TransformBegin Scale 1 0.351503 2.067017
+ObjectInstance "Cube_005-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_005
+AttributeBegin
+TransformBegin Translate -9.806304 11.8968 3.189848
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_006
+AttributeBegin
+TransformBegin Translate -18.17935 10.47315 0.8964009
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_007
+AttributeBegin
+TransformBegin Translate -6.495275 10.47315 0.8964009
+TransformBegin Rotate 180 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_008
+AttributeBegin
+TransformBegin Translate -6.495275 15.3461 0.8964009
+TransformBegin Rotate 180 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_009
+AttributeBegin
+TransformBegin Translate -18.17935 15.3461 0.8964009
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_010
+AttributeBegin
+TransformBegin Translate -22.69765 4.354195 1.82055
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 6.428616 2.200383 -5.3745
+ObjectInstance "Cube_023-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_011
+AttributeBegin
+TransformBegin Translate -23.34524 1.850287 2.801356
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.314857 1.80122 -1.432307
+ObjectInstance "Cube_022-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_012
+AttributeBegin
+TransformBegin Translate -25.59222 -0.8708029 4.492543
+TransformBegin Rotate 270.899200 0.000000 0.000000 1.000000
+TransformBegin Rotate 0.544023 0.000000 1.000000 0.000000
+TransformBegin Rotate -80 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_024-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_013
+AttributeBegin
+TransformBegin Translate -27.04387 -1.48086 0.8795736
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_014
+AttributeBegin
+TransformBegin Translate -21.86945 -1.42578 0.8795736
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_015
+AttributeBegin
+TransformBegin Translate -27.11372 5.081807 0.8795736
+TransformBegin Rotate 270.554500 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_016
+AttributeBegin
+TransformBegin Translate -21.93925 5.131884 0.8795736
+TransformBegin Rotate 270.554500 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_017
+AttributeBegin
+TransformBegin Translate -3.465814 -2.021254 0.8795736
+TransformBegin Rotate 89.497750 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_018
+AttributeBegin
+TransformBegin Translate 1.708696 -2.066614 0.8795736
+TransformBegin Rotate 89.497750 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_019
+AttributeBegin
+TransformBegin Translate -3.414669 4.536584 0.8795736
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_020
+AttributeBegin
+TransformBegin Translate 1.759883 4.496226 0.8795736
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_008-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_021
+AttributeBegin
+TransformBegin Translate 0.2972331 3.913044 4.492543
+TransformBegin Rotate 89.842450 0.000000 0.000000 1.000000
+TransformBegin Rotate 0.544023 0.000000 1.000000 0.000000
+TransformBegin Rotate -80 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_010-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_022
+AttributeBegin
+TransformBegin Translate -12.70926 1.306005 1.70928
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 3.405361 4.161407 -0.09637132
+ObjectInstance "Cube_006-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_023
+AttributeBegin
+TransformBegin Translate -2.693203 -1.257683 1.82055
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 6.428616 2.200383 -5.3745
+ObjectInstance "Cube_009-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_024
+AttributeBegin
+TransformBegin Translate -22.37159 24.70041 8.454808
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 270 0 1 0
+TransformBegin Rotate 180 1 0 0
+TransformBegin Scale 5.964797 0.0734935 2.563405
+ObjectInstance "Cube_011-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_025
+AttributeBegin
+TransformBegin Translate -1.958499 1.281072 2.807782
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.314857 1.80122 -1.432307
+ObjectInstance "Cube_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_026
+AttributeBegin
+TransformBegin Translate -12.70926 1.306005 1.70928
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 3.899953 4.765806 -0.1103682
+ObjectInstance "Cube_012-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_027
+AttributeBegin
+TransformBegin Translate -1.958499 -11.56406 2.807782
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.314857 1.80122 -1.432307
+ObjectInstance "Cube_020-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_028
+AttributeBegin
+TransformBegin Translate 7.246519 10.67613 7.416005
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.341334 0.5810671 7.5
+ObjectInstance "Cube_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_029
+AttributeBegin
+TransformBegin Translate 1.602546 17.19538 8.775938
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 180 1 0 0
+TransformBegin Scale 5.523139 0.4195876 5.517437
+ObjectInstance "Mesh_006-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_030
+AttributeBegin
+TransformBegin Translate 18.35285 7.030831 7.979476
+TransformBegin Rotate 180.939200 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.853750 0.000000 1.000000 0.000000
+TransformBegin Rotate -90.364780 1.000000 0.000000 0.000000
+TransformBegin Scale 0.1756652 1 1
+ObjectInstance "Cube_016-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_031
+AttributeBegin
+TransformBegin Translate 17.95521 7.030831 7.979476
+TransformBegin Rotate 180.939200 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.853750 0.000000 1.000000 0.000000
+TransformBegin Rotate -90.364780 1.000000 0.000000 0.000000
+TransformBegin Scale 0.1756652 1 1
+ObjectInstance "Cube_016-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_033
+AttributeBegin
+TransformBegin Translate 14.69191 9.020091 6.89502
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 4.61186 1 0.1318348
+ObjectInstance "Cube_015-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_034
+AttributeBegin
+TransformBegin Translate 18.84706 4.96032 7.881147
+TransformBegin Rotate 180.939200 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.853750 0.000000 1.000000 0.000000
+TransformBegin Rotate -90.364780 1.000000 0.000000 0.000000
+TransformBegin Scale 0.160454 0.9134082 0.9134082
+ObjectInstance "Cube_016-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_035
+AttributeBegin
+TransformBegin Translate 18.39586 4.96032 7.649733
+TransformBegin Rotate 180.939200 0.000000 0.000000 1.000000
+TransformBegin Rotate -22.853750 0.000000 1.000000 0.000000
+TransformBegin Rotate -90.364780 1.000000 0.000000 0.000000
+TransformBegin Scale 0.118237 0.6730815 0.6730815
+ObjectInstance "Cube_016-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_036
+AttributeBegin
+TransformBegin Translate 17.2564 8.989343 7.150095
+TransformBegin Rotate -213.613600 0.000000 0.000000 1.000000
+TransformBegin Rotate -88.796100 0.000000 1.000000 0.000000
+TransformBegin Rotate 231.265600 1.000000 0.000000 0.000000
+TransformBegin Scale 0.118237 0.6730815 0.6730815
+ObjectInstance "Cube_017-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_037
+AttributeBegin
+TransformBegin Translate 17.26783 9.033421 7.393216
+TransformBegin Rotate -175.830500 0.000000 0.000000 1.000000
+TransformBegin Rotate -88.796100 0.000000 1.000000 0.000000
+TransformBegin Rotate 231.265600 1.000000 0.000000 0.000000
+TransformBegin Scale 0.118237 0.6730815 0.6730815
+ObjectInstance "Cube_018-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_038
+AttributeBegin
+TransformBegin Translate 13.29436 9.983866 11.50431
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.065485 -0.07920593 3.27559
+ObjectInstance "Cube-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_046
+AttributeBegin
+TransformBegin Translate -8.725183 25.38336 21.19096
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 33.36762 1 1
+ObjectInstance "Cube_007-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_047
+AttributeBegin
+TransformBegin Translate -2.693203 -14.10282 1.82055
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 6.428616 2.200383 -5.3745
+ObjectInstance "Cube_025-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_048
+AttributeBegin
+TransformBegin Translate 0.2972331 -8.932092 4.492543
+TransformBegin Rotate 89.842450 0.000000 0.000000 1.000000
+TransformBegin Rotate 0.544023 0.000000 1.000000 0.000000
+TransformBegin Rotate -80 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_026-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_049
+AttributeBegin
+TransformBegin Translate 1.759883 -8.348909 0.8795736
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_027-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_050
+AttributeBegin
+TransformBegin Translate -3.414669 -8.308552 0.8795736
+TransformBegin Rotate -90.446860 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_027-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_051
+AttributeBegin
+TransformBegin Translate 1.708696 -14.91175 0.8795736
+TransformBegin Rotate 89.497750 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_027-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_052
+AttributeBegin
+TransformBegin Translate -3.465814 -14.86639 0.8795736
+TransformBegin Rotate 89.497750 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_027-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_053
+AttributeBegin
+TransformBegin Translate -21.88259 -8.335962 0.8795736
+TransformBegin Rotate 270.554500 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_013-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_054
+AttributeBegin
+TransformBegin Translate -27.05705 -8.38604 0.8795736
+TransformBegin Rotate 270.554500 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_013-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_055
+AttributeBegin
+TransformBegin Translate -21.81278 -14.89363 0.8795736
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_013-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_056
+AttributeBegin
+TransformBegin Translate -26.9872 -14.94871 0.8795736
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 0.3205321 -0.1670068
+ObjectInstance "Cube_013-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_057
+AttributeBegin
+TransformBegin Translate -25.53555 -14.33865 4.492543
+TransformBegin Rotate 270.899200 0.000000 0.000000 1.000000
+TransformBegin Rotate 0.544023 0.000000 1.000000 0.000000
+TransformBegin Rotate -80 1 0 0
+TransformBegin Scale 5.160504 1.80122 -1.432307
+ObjectInstance "Cube_014-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_058
+AttributeBegin
+TransformBegin Translate -23.28857 -11.61756 2.801356
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 5.314857 1.80122 -1.432307
+ObjectInstance "Cube_019-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cube_059
+AttributeBegin
+TransformBegin Translate -22.64099 -9.113651 1.82055
+TransformBegin Rotate 90.609870 0.000000 0.000000 1.000000
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 6.428616 2.200383 -5.3745
+ObjectInstance "Cube_021-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder
+AttributeBegin
+TransformBegin Translate -20.0806 24.64588 2.806733
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08306985 0.08306985 0.1882917
+ObjectInstance "Cylinder_010-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_001
+AttributeBegin
+TransformBegin Translate -20.0827 24.64588 14.14446
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08306985 0.08306985 0.1882917
+ObjectInstance "Cylinder_010-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_002
+AttributeBegin
+TransformBegin Translate -12.37264 1.329473 17.53285
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.065584 0.065584 5.286612
+ObjectInstance "Cylinder_012-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_004
+AttributeBegin
+TransformBegin Translate -24.65267 24.64588 14.12365
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08306985 0.08306985 0.1882917
+ObjectInstance "Cylinder_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_007
+AttributeBegin
+TransformBegin Translate -24.65848 24.64588 2.806733
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08306985 0.08306985 0.1882917
+ObjectInstance "Cylinder_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_008
+AttributeBegin
+TransformBegin Translate 8.77969 9.928002 8.849111
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08550714 0.08550714 0.1938162
+ObjectInstance "Cylinder_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_009
+AttributeBegin
+TransformBegin Translate 17.86269 9.919351 8.472059
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.06472024 0.06472024 0.1466992
+ObjectInstance "Cylinder_005-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_010
+AttributeBegin
+TransformBegin Translate 17.86131 9.920934 14.1857
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.06681438 0.06681438 0.1514459
+ObjectInstance "Cylinder_005-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Cylinder_011
+AttributeBegin
+TransformBegin Translate 8.78569 9.926276 13.96166
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90 0 1 0
+TransformBegin Rotate 90 1 0 0
+TransformBegin Scale 0.08391458 0.08391458 0.1902064
+ObjectInstance "Cylinder_004-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Lamp_001
+AttributeBegin
+TransformBegin Translate -12.3701 1.334113 16.64647
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source Lamp_001-light
+LightSource "spot" 
+  "spectrum I" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/HangingLight.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+  "float coneangle" [36.750820] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Lamp_008
+AttributeBegin
+TransformBegin Translate -22.382 23.44714 17.0124
+TransformBegin Rotate -0.000001 0.000000 0.000000 1.000000
+TransformBegin Rotate -0.000001 0.000000 1.000000 0.000000
+TransformBegin Rotate 48.090290 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source Lamp_008-light
+LightSource "spot" 
+  "spectrum I" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+  "float coneangle" [55.865100] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Lamp_009
+AttributeBegin
+TransformBegin Translate -22.382 23.73127 16.61774
+TransformBegin Rotate 120 0 0 1
+TransformBegin Rotate 179.997400 0.000000 1.000000 0.000000
+TransformBegin Rotate 1.269313 1.000000 0.000000 0.000000
+TransformBegin Scale 1 1 1
+# light source Lamp_009-light
+LightSource "spot" 
+  "spectrum I" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd" 
+  "point from" [0 0 0] 
+  "point to" [0 0 -1] 
+  "float coneangle" [45.566380] 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Line178954_13_-_Defau
+AttributeBegin
+TransformBegin Translate -22.39316 23.7237 17.11914
+TransformBegin Rotate -180 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 0.00793595 0.00793595 0.00793595
+ObjectInstance "Line178954_13_-_Defau-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Plane
+AttributeBegin
+TransformBegin Translate -5.508096 7.921134 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 22.08261 13.84968 23.16144
+ObjectInstance "Plane-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Plane_001
+AttributeBegin
+TransformBegin Translate -5.508096 7.921134 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 22.08261 13.84968 23.16144
+ObjectInstance "Plane_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Plane_002
+AttributeBegin
+TransformBegin Translate -5.508096 7.921134 0
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 22.08261 13.84968 23.16144
+ObjectInstance "Plane_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Plane_003
+AttributeBegin
+TransformBegin Translate 6.03366 30.81228 -13.36096
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 35.43666 22.22501 37.1679
+ObjectInstance "Plane_005-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# SneakyPoint
+AttributeBegin
+TransformBegin Translate 16.3437 18.7382 19.36953
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source SneakyPoint-light
+LightSource "point" 
+  "spectrum I" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/YellowLight.spd" 
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sphere
+AttributeBegin
+TransformBegin Translate -12.40319 1.332148 15.19984
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1.731537 1.731537 1.731537
+ObjectInstance "Sphere_002-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# Sphere_002
+AttributeBegin
+TransformBegin Translate -12.40323 1.335135 15.1799
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 0 0 1 0
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1.488948 1.488948 1.488948
+ObjectInstance "Sphere_001-mesh"
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+# WallLight
+AttributeBegin
+TransformBegin Translate -39 0 10
+TransformBegin Rotate 0 0 0 1
+TransformBegin Rotate 90.000040 0.000000 1.000000 0.000000
+TransformBegin Rotate 0 1 0 0
+TransformBegin Scale 1 1 1
+# light source WallLight-mesh-area-light
+AreaLightSource "diffuse" 
+  "spectrum L" "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeInterior/WindowLight.spd" 
+  "integer nsamples" [8] 
+# object WallLight-mesh
+NamedMaterial "WallLight-material"
+NamedMaterial "WallLight-material"
+Include "mesh-data-WallLight-mesh_0.pbrt"
+
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+TransformEnd
+AttributeEnd
+
+WorldEnd

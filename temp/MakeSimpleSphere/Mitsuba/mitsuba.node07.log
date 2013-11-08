@@ -1,0 +1,35 @@
+2013-11-01 18:42:17 INFO  main [mitsuba.cpp:256] Mitsuba version 0.4.4 (Linux, 64 bit), Copyright (c) 2013 Wenzel Jakob
+2013-11-01 18:42:17 INFO  main [mitsuba.cpp:360] Parsing scene description from "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSimpleSphere/Mitsuba/SimpleSphere-001.xml" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/direct.so" ..
+2013-11-01 18:42:17 INFO  main [spectrum.cpp:585] "mccBabel-2.spd": loaded a spectral power distribution with 36 entries (between 380.000000 and 730.000000 nm)
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/ward.so" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/serialized.so" ..
+2013-11-01 18:42:17 INFO  main [SerializedMesh] Loading shape 0 from "SimpleSphere-001Unadjusted.serialized" ..
+2013-11-01 18:42:17 INFO  main [spectrum.cpp:585] "D65.spd": loaded a spectral power distribution with 81 entries (between 380.000000 and 780.000000 nm)
+2013-11-01 18:42:17 WARN  main [properties.cpp:78] Property "intensity" was specified multiple times!
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/point.so" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.so" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/gaussian.so" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/hdrfilm.so" ..
+2013-11-01 18:42:17 INFO  main [PluginManager] Loading plugin "plugins/orthographic.so" ..
+2013-11-01 18:42:17 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (81920 primitives) ..
+2013-11-01 18:42:18 INFO  ren0 [KDTreeBase] Finished -- took 476 ms.
+2013-11-01 18:42:18 INFO  ren0 [SamplingIntegrator] Starting render job (201x201, 8 samples, 8 cores, SSE2 enabled) ..
+2013-11-01 18:42:21 INFO  ren0 [HDRFilm] Writing image to "/home2/brainard/render-toolbox-3/epic-scene-test/temp/MakeSimpleSphere/Mitsuba/SimpleSphere-001.exr" ..
+2013-11-01 18:42:21 INFO  ren0 [RenderQueue] Render time: 3.2770s
+2013-11-01 18:42:21 INFO  main [statistics.cpp:137] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/direct.so [Direct illumination integrator]
+    -  plugins/gaussian.so [Gaussian reconstruction filter]
+    -  plugins/hdrfilm.so [High dynamic range film]
+    -  plugins/ldsampler.so [Low discrepancy sampler]
+    -  plugins/orthographic.so [Orthographics camera]
+    -  plugins/point.so [Point emitter]
+    -  plugins/serialized.so [Serialized mesh loader]
+    -  plugins/ward.so [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 8.361 M
+    -  Shadow rays traced : 8.042 M
+------------------------------------------------------------

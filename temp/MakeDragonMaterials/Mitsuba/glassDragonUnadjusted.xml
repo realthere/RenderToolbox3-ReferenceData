@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	Automatically converted from COLLADA
+
+-->
+
+<scene version="0.4.4">
+	<integrator id="integrator" type="direct"/>
+
+	<bsdf id="ReflectorMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="1 1 1"/>
+	</bsdf>
+
+	<bsdf id="WallMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.75 0.75 0.75"/>
+	</bsdf>
+
+	<bsdf id="FloorMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="0.5 0.5 0.5"/>
+	</bsdf>
+
+	<bsdf id="DragonMaterial-material" type="diffuse">
+		<rgb name="reflectance" value="1 0.593133 0.331203"/>
+	</bsdf>
+
+	<shape id="LightX-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+		<transform name="toWorld">
+			<matrix value="-0.500001 0 0.866025 -11 0 1 0 0 -0.866025 0 -0.500001 11 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="ReflectorMaterial-material"/>
+	</shape>
+
+	<shape id="LightY-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="1"/>
+		<transform name="toWorld">
+			<matrix value="1 0 0 0 0 -0.500001 0.866025 -11 0 -0.866025 -0.500001 11 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="ReflectorMaterial-material"/>
+	</shape>
+
+	<shape id="Plane_003-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="2"/>
+		<transform name="toWorld">
+			<matrix value="10 0 0 0 0 -10 1.75635e-06 0 0 -1.75635e-05 -1 20 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="WallMaterial-material"/>
+	</shape>
+
+	<shape id="Plane_002-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="3"/>
+		<transform name="toWorld">
+			<matrix value="-6.39758e-06 0 -10 10 0 10 0 0 10 0 -6.39758e-06 10 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="WallMaterial-material"/>
+	</shape>
+
+	<shape id="Plane_001-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="4"/>
+		<transform name="toWorld">
+			<matrix value="10 0 0 0 0 -6.39758e-06 -10 10 0 10 -6.39758e-06 10 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="WallMaterial-material"/>
+	</shape>
+
+	<shape id="Plane-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="5"/>
+		<transform name="toWorld">
+			<matrix value="10 0 0 0 0 10 0 0 0 0 10 0 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="FloorMaterial-material"/>
+	</shape>
+
+	<shape id="default-mesh_0" type="serialized">
+		<string name="filename" value="glassDragonUnadjusted.serialized"/>
+		<integer name="shapeIndex" value="6"/>
+		<transform name="toWorld">
+			<matrix value="0.97437 -3.66492e-08 -0.224951 0 -0.224951 -1.58745e-07 -0.97437 0 0 1 -1.62921e-07 0 0 0 0 1"/>
+		</transform>
+		<ref name="bsdf" id="DragonMaterial-material"/>
+	</shape>
+
+	<sensor id="Camera-camera" type="perspective">
+		<float name="fov" value="40.1764"/>
+		<float name="nearClip" value="0.1"/>
+		<float name="farClip" value="100"/>
+		<string name="fovAxis" value="smaller"/>
+
+		<transform name="toWorld">
+			<matrix value="-0.707107 0.183012 0.683013 -15 0.707107 0.183012 0.683013 -15 0 0.965926 -0.258818 10 0 0 0 1"/>
+		</transform>
+
+		<sampler id="Camera-camera_sampler" type="ldsampler">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film id="Camera-camera_film" type="hdrfilm">
+			<integer name="width" value="200"/>
+			<integer name="height" value="160"/>
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+</scene>

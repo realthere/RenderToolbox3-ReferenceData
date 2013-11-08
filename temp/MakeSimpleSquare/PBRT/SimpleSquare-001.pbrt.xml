@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbrt_xml>
+   <Film id="film" type="image">
+      <parameter name="xresolution" type="integer">50</parameter>
+      <parameter name="yresolution" type="integer">50</parameter>
+   </Film>
+   <PixelFilter id="filter" type="gaussian">
+      <parameter name="alpha" type="float">2</parameter>
+      <parameter name="xwidth" type="float">2</parameter>
+      <parameter name="ywidth" type="float">2</parameter>
+   </PixelFilter>
+   <Sampler id="sampler" type="lowdiscrepancy">
+      <parameter name="pixelsamples" type="integer">8</parameter>
+   </Sampler>
+   <SurfaceIntegrator id="integrator" type="directlighting"/>
+   <CameraNode id="Camera" type="">
+      <transformation name="location" type="Translate">0 0 2.5</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_camera" type="Camera">Camera-camera</reference>
+   </CameraNode>
+   <Camera id="Camera-camera" type="perspective">
+      <transformation name="internalLook" type="LookAt">0 0 0 0 0 -1 0 1 0</transformation>
+      <parameter name="fov" type="float">49.134340</parameter>
+   </Camera>
+   <Shape id="Plane-mesh" type="trianglemesh">
+      <reference name="Plane-mesh_0-material" type="Material">SquareMaterial-material</reference>
+      <reference name="Plane-mesh_0" type="Include">mesh-data-Plane-mesh_0.pbrt</reference>
+      <reference name="material" type="Material">SquareMaterial-material</reference>
+   </Shape>
+   <Attribute id="Square" type="">
+      <transformation name="location" type="Translate">0 0 0</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_geometry" type="Object">Plane-mesh</reference>
+      <reference name="instance_material" type="Material">SquareMaterial-material</reference>
+   </Attribute>
+   <Material id="SquareMaterial-material" type="matte">
+      <parameter name="Kd" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/Macbeth-ColorChecker/mccBabel-1.spd</parameter>
+   </Material>
+   <Attribute id="Sun" type="">
+      <transformation name="location" type="Translate">0 0 10</transformation>
+      <transformation name="rotationZ" type="Rotate">0 0 0 1</transformation>
+      <transformation name="rotationY" type="Rotate">0 0 1 0</transformation>
+      <transformation name="rotationX" type="Rotate">0 1 0 0</transformation>
+      <transformation name="scale" type="Scale">1 1 1</transformation>
+      <reference name="instance_light" type="LightSource">Sun-light</reference>
+   </Attribute>
+   <LightSource id="Sun-light" type="distant">
+      <parameter name="L" type="spectrum">/home2/brainard/toolboxes/RenderToolbox3/RenderData/D65.spd</parameter>
+      <parameter name="from" type="point">0 0 0</parameter>
+      <parameter name="to" type="point">0 0 -1</parameter>
+   </LightSource>
+</pbrt_xml>

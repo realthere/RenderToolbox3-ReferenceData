@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!-- basic renderer properties that Collada doesn't know about -->
+<scene version="0.4.1">
+   <bsdf id="roomMaterial-material" type="ward">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.20_Spectrum.spd" name="diffuseReflectance"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.03_Spectrum.spd" name="specularReflectance"/>
+      <boolean name="ensureEnergyConservation" value="false"/>
+      <float name="alphaU" value="0.51"/>
+      <float name="alphaV" value="0.51"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+   <bsdf id="clothMaterial-material" type="ward">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/RedRGB_scale0.30_Spectrum.spd" name="diffuseReflectance"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/RedRGB_scale0.10_Spectrum.spd" name="specularReflectance"/>
+      <boolean name="ensureEnergyConservation" value="false"/>
+      <float name="alphaU" value="0.41"/>
+      <float name="alphaV" value="0.41"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+   <bsdf id="cylinderMaterial-material" type="roughplastic">
+      <float name="alpha" value="0.01"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/BlueRGB_scale0.70_Spectrum.spd" name="diffuseReflectance"/>
+   </bsdf>
+   <bsdf id="lightCheckMaterial-material" type="ward">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.44_Spectrum.spd" name="diffuseReflectance"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.03_Spectrum.spd" name="specularReflectance"/>
+      <boolean name="ensureEnergyConservation" value="false"/>
+      <float name="alphaU" value="0.1"/>
+      <float name="alphaV" value="0.1"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+   <bsdf id="darkCheckMaterial-material" type="ward">
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.20_Spectrum.spd" name="diffuseReflectance"/>
+      <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.03_Spectrum.spd" name="specularReflectance"/>
+      <boolean name="ensureEnergyConservation" value="false"/>
+      <float name="alphaU" value="0.1"/>
+      <float name="alphaV" value="0.1"/>
+      <string name="variant" value="ward"/>
+   </bsdf>
+   <merge id="frontAreaLamp-mesh_0">
+      <emitter id="frontAreaLamp-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale0.16_Spectrum.spd" name="radiance"/>
+      </emitter>
+   </merge>
+   <merge id="leftAreaLamp-mesh_0">
+      <emitter id="leftAreaLamp-mesh_0-area-light" type="area">
+         <spectrum filename="/home2/brainard/toolboxes/RenderToolbox3/ExampleScenes/BlenderPythonGeneratedScene/GrayRGB_scale1.00_Spectrum.spd" name="radiance"/>
+      </emitter>
+   </merge>
+   <merge id="frontAreaLamp-light" type="point">
+      <spectrum name="intensity" value="300:0 800:0"/>
+   </merge>
+   <merge id="leftAreaLamp-light" type="point">
+      <spectrum name="intensity" value="300:0 800:0"/>
+   </merge>
+
+    
+   <integrator id="integrator" type="bdpt">
+        
+      <integer name="shadingSamples" value="32"/>
+    
+      <integer name="maxDepth" value="7"/>
+      <boolean name="sampleDirect" value="true"/>
+      <boolean name="lightImage" value="true"/>
+   </integrator>
+    
+    
+   <sampler id="Camera-camera_sampler" type="ldsampler">
+        
+      <integer name="sampleCount" value="128"/>
+    
+      <integer name="pixelSamples" value="16"/>
+   </sampler>
+    
+    
+   <merge id="Camera-camera_film" type="hdrfilm">
+        
+      <string name="fileFormat" value="openexr"/>
+        
+      <string name="pixelFormat" value="spectrum"/>
+        
+      <string name="componentFormat" value="float16"/>
+        
+      <boolean name="banner" value="false"/>
+        
+        
+      <rfilter type="gaussian">
+            
+         <float name="stddev" value="0.5"/>
+        
+      </rfilter>
+    
+   </merge>
+    
+
+</scene>
